@@ -1,0 +1,1347 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"sum_",
+				"sum_price"
+			],
+			[
+				"check",
+				"checked"
+			],
+			[
+				"type",
+				"typeof"
+			],
+			[
+				"lo",
+				"location"
+			],
+			[
+				"order",
+				"order_type"
+			],
+			[
+				"is",
+				"isZero"
+			],
+			[
+				"h",
+				"href"
+			],
+			[
+				"re",
+				"refresh"
+			],
+			[
+				"li",
+				"liWidth"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"vou",
+				"vou_id"
+			],
+			[
+				"max",
+				"max_count"
+			],
+			[
+				"menu",
+				"menu"
+			],
+			[
+				"add",
+				"addMenu"
+			],
+			[
+				"m",
+				"myScroll"
+			],
+			[
+				"refre",
+				"refresh"
+			],
+			[
+				"he",
+				"helpScroll"
+			],
+			[
+				"con",
+				"content"
+			],
+			[
+				"c",
+				"color"
+			],
+			[
+				"all",
+				"allMenuData"
+			],
+			[
+				"data",
+				"data-count"
+			],
+			[
+				"a",
+				"attr"
+			],
+			[
+				"lun",
+				"lunchbox__numbername"
+			],
+			[
+				"clea",
+				"clearMenu"
+			],
+			[
+				"da",
+				"date"
+			],
+			[
+				"pa",
+				"parents"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"border-top",
+				"border-top-right-radius"
+			],
+			[
+				"border",
+				"border-radius"
+			],
+			[
+				"border-r",
+				"border-right"
+			],
+			[
+				"s",
+				"solid"
+			],
+			[
+				"la",
+				"layer"
+			],
+			[
+				"cl",
+				"close"
+			],
+			[
+				"I",
+				"IndexUrl"
+			],
+			[
+				"ov",
+				"overflow"
+			],
+			[
+				"pos",
+				"position"
+			],
+			[
+				"scr",
+				"scroller"
+			],
+			[
+				"pro",
+				"processCommentData"
+			],
+			[
+				"bind",
+				"bindEvents"
+			],
+			[
+				"com",
+				"comment"
+			],
+			[
+				"P",
+				"pattern"
+			],
+			[
+				"sle",
+				"select-time"
+			],
+			[
+				"boo",
+				"book-early-block__left"
+			],
+			[
+				"p",
+				"prototype"
+			],
+			[
+				"te",
+				"true"
+			],
+			[
+				"in",
+				"initialize"
+			],
+			[
+				"ba",
+				"background"
+			],
+			[
+				"margin",
+				"margin-right"
+			],
+			[
+				"fl",
+				"float"
+			],
+			[
+				"bo",
+				"border"
+			],
+			[
+				"buffet",
+				"buffet-meal-content"
+			],
+			[
+				"M",
+				"Mealselect"
+			],
+			[
+				"ma",
+				"mealselect"
+			],
+			[
+				"op",
+				"opacity"
+			],
+			[
+				"back",
+				"background"
+			],
+			[
+				"co",
+				"core"
+			],
+			[
+				"user",
+				"user-form"
+			],
+			[
+				"O",
+				"Order"
+			],
+			[
+				"nu",
+				"Number"
+			],
+			[
+				"n",
+				"Number"
+			],
+			[
+				"edit",
+				"editVouchers"
+			],
+			[
+				"vo",
+				"vouchers"
+			],
+			[
+				"ge",
+				"getOrderInfo"
+			],
+			[
+				"utl",
+				"Util"
+			],
+			[
+				"log",
+				"login"
+			],
+			[
+				"Pa",
+				"Page"
+			],
+			[
+				"to",
+				"toFixed"
+			],
+			[
+				"redEnvelopeE",
+				"redEnvelopeEarning"
+			],
+			[
+				"red",
+				"redEnvelopeConsume"
+			],
+			[
+				"Vou",
+				"vouchers"
+			],
+			[
+				"hongbao",
+				"hongbaolist"
+			],
+			[
+				"sha",
+				"share"
+			],
+			[
+				"wdi",
+				"width"
+			],
+			[
+				"U",
+				"Util"
+			],
+			[
+				"css",
+				"cssmin"
+			],
+			[
+				"pso",
+				"position"
+			],
+			[
+				"f",
+				"flightHandler"
+			],
+			[
+				"men",
+				"menuInfo"
+			],
+			[
+				"me",
+				"menuInfo"
+			],
+			[
+				"r",
+				"return"
+			],
+			[
+				"cons",
+				"consoleLog"
+			],
+			[
+				"time",
+				"timeID"
+			],
+			[
+				"Co",
+				"Config"
+			],
+			[
+				"ca",
+				"Cache"
+			],
+			[
+				"C",
+				"Cache"
+			],
+			[
+				"res",
+				"respnoseText"
+			],
+			[
+				"index",
+				"indexOf"
+			],
+			[
+				"w",
+				"wrap"
+			],
+			[
+				"or",
+				"orderList"
+			],
+			[
+				"mar",
+				"margin"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"histor",
+				"History"
+			],
+			[
+				"jquery",
+				"jquery"
+			],
+			[
+				"Order",
+				"OrderPage"
+			],
+			[
+				"fee",
+				"FeedbackPage"
+			],
+			[
+				"main",
+				"main-btn"
+			],
+			[
+				"mai",
+				"main-btn"
+			],
+			[
+				"get",
+				"get-sms"
+			],
+			[
+				"b",
+				"base"
+			],
+			[
+				"bar",
+				"barcodeScanner"
+			],
+			[
+				"api",
+				"apiMap"
+			],
+			[
+				"H",
+				"HomePage"
+			],
+			[
+				"i",
+				"iscroll"
+			],
+			[
+				"jque",
+				"jquery"
+			],
+			[
+				"jq",
+				"jquery"
+			],
+			[
+				"ndT",
+				"ndTitleContainer"
+			],
+			[
+				"page",
+				"pageClass"
+			],
+			[
+				"for",
+				"for	for (…) {…}"
+			],
+			[
+				"class",
+				"classNames"
+			],
+			[
+				"ned",
+				"needPay"
+			],
+			[
+				"bord",
+				"border-left"
+			],
+			[
+				"magin",
+				"margin-top"
+			],
+			[
+				"fi",
+				"first-child"
+			],
+			[
+				"pr",
+				"prevAllHeight"
+			],
+			[
+				"checl",
+				"checkClassHeight"
+			],
+			[
+				"dat",
+				"data-role"
+			],
+			[
+				"body",
+				"bodyHeight"
+			],
+			[
+				"public",
+				"publicJs"
+			],
+			[
+				"font-",
+				"font-size"
+			],
+			[
+				"ls",
+				"list-style-type"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "header.php",
+			"settings":
+			{
+				"buffer_size": 993,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "show.php",
+			"settings":
+			{
+				"buffer_size": 2395,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "js/lib/jquery.slider.js",
+			"settings":
+			{
+				"buffer_size": 20480,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "index.php",
+			"settings":
+			{
+				"buffer_size": 656,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "css/layout.css",
+			"settings":
+			{
+				"buffer_size": 4285,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "about.php",
+			"settings":
+			{
+				"buffer_size": 1880,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "css/global.css",
+			"settings":
+			{
+				"buffer_size": 490,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "news.php",
+			"settings":
+			{
+				"buffer_size": 1880,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "js/page/nav.js",
+			"settings":
+			{
+				"buffer_size": 1815,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 47.0,
+		"selected_items":
+		[
+			[
+				"install ",
+				"Package Control: Install Package"
+			],
+			[
+				"install p",
+				"Package Control: Install Package"
+			],
+			[
+				"list",
+				"Package Control: List Packages"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 593.0
+	},
+	"console":
+	{
+		"height": 146.0,
+		"history":
+		[
+			"import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); open(os.path.join(ipp, pf), 'wb').write(urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ','%20')).read())",
+			"import urllib2,os;pf='Package Control.sublime-package';ipp=sublime.installed_packages_path();os.makedirs(ipp) if not os.path.exists(ipp) else None;open(os.path.join(ipp,pf),'wb').write(urllib2.urlopen('http://sublime.wbond.net/'+pf.replace(' ','%20')).read())"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/shikun/develop/tudou",
+		"/Users/shikun/develop/tudou/css",
+		"/Users/shikun/develop/tudou/js",
+		"/Users/shikun/develop/tudou/js/lib",
+		"/Users/shikun/develop/tudou/js/page"
+	],
+	"file_history":
+	[
+		"/Users/shikun/develop/tudou/js/jquery.slider.js",
+		"/Users/shikun/develop/tudou/js/jquery.nav.js",
+		"/Users/shikun/develop/tudou/index.html",
+		"/Users/shikun/develop/tudou/job.html",
+		"/Users/shikun/develop/leshipai/uapp/html/js/page/dishes.js",
+		"/Users/shikun/develop/leshipai/uapp/html/js/page/order.js",
+		"/Users/shikun/develop/leshipai/uapp/html/js/page/lunchbox.js",
+		"/Users/shikun/develop/leshipai/uapp/html/js/page/article.js",
+		"/Users/shikun/develop/leshipai/uapp/html/js/page/modifyPhoneNumber.js",
+		"/Volumes/www/web/uapp/html/js/page/userAccount.js",
+		"/Volumes/www/web/uapp/html/index.html",
+		"/Volumes/www/web/uapp/html/js/base/dialog.js",
+		"/Volumes/www/web/uapp/html/js/page/payorder.js",
+		"/Volumes/www/web/uapp/html/css/page/payorder.css",
+		"/Volumes/www/web/uapp/html/js/page/lunchAddress.js",
+		"/Volumes/www/web/uapp/html/js/page/location.js",
+		"/Volumes/www/web/uapp/html/js/common/address.js",
+		"/Volumes/www/web/uapp/html/js/page/mealselect.js",
+		"/Volumes/www/web/uapp/html/js/page/modifyAddress.js",
+		"/Volumes/www/web/uapp/html/js/page/order.js",
+		"/Volumes/www/web/uapp/html/js/common/getShop.js",
+		"/Volumes/www/web/uapp/html/css/page/location.css",
+		"/Volumes/www/web/uapp/html/js/page/login.js",
+		"/Volumes/www/web/uapp/html/index.php",
+		"/Volumes/www/web/uapp/html/js/common/shopStatus.js",
+		"/Volumes/www/web/uapp/html/js/base/config.js",
+		"/Volumes/www/web/ladmin/html/js/page/addlunch.js",
+		"/Volumes/www/web/ladmin/html/js/page/findlunch.js",
+		"/Volumes/www/web/ladmin/html/js/page/login.js",
+		"/Volumes/www/web/ladmin/html/js/common/config.js",
+		"/Volumes/www/web/ladmin/templates/add.html",
+		"/Volumes/www/web/ladmin/templates/lunch.html",
+		"/Volumes/www/web/ladmin/templates/menu.html",
+		"/Volumes/www/web/ladmin/templates/print.html",
+		"/Volumes/www/web/ladmin/templates/footer.php",
+		"/Volumes/www/web/ladmin/templates/login.html",
+		"/Volumes/www/web/ladmin/html/js/page/order.js",
+		"/Volumes/www/web/ladmin/html/js/base/ajax.js",
+		"/Volumes/www/web/ladmin/html/js/lib/jquery.min.js",
+		"/Volumes/www-1/web/uapp/html/index.html",
+		"/Volumes/www-1/web/uapp/html/js/page/payorder.js",
+		"/Volumes/www-1/web/uapp/html/js/page/lunchbox.js",
+		"/Volumes/www-1/web/uapp/html/js/page/hongbaolist.js",
+		"/Volumes/www-1/web/uapp/html/js/page/userAccount.js",
+		"/Volumes/www-1/web/uapp/html/js/page/hongbao.js",
+		"/Volumes/www-1/web/uapp/html/js/base/page.js",
+		"/Volumes/www-1/web/uapp/html/app.php",
+		"/Volumes/www-1/web/uapp/html/js/page/article.js",
+		"/Volumes/www-1/web/uapp/html/js/page/articlelist.js",
+		"/Volumes/www-1/web/uapp/html/js/page/comments.js",
+		"/Volumes/www-1/web/uapp/html/js/page/coupon.js",
+		"/Volumes/www-1/web/uapp/html/js/page/dishes.js",
+		"/Volumes/www-1/web/uapp/html/js/page/feedback.js",
+		"/Volumes/www-1/web/uapp/html/js/page/forgetPwd.js",
+		"/Volumes/www-1/web/uapp/html/js/page/help.js",
+		"/Volumes/www-1/web/uapp/html/js/common/address.js",
+		"/Volumes/www-1/web/uapp/html/js/common/editOrder.js",
+		"/Volumes/www-1/web/uapp/html/js/common/getShop.js",
+		"/Volumes/www-1/web/uapp/html/js/common/shopStatus.js",
+		"/Volumes/www-1/web/uapp/html/js/page/lunchAddress.js",
+		"/Volumes/www-1/web/uapp/html/js/base/data.js",
+		"/Volumes/www-1/web/uapp/html/js/base/dialog.js",
+		"/Volumes/www-1/web/uapp/html/js/base/image.js",
+		"/Volumes/www-1/web/uapp/html/js/base/load.js",
+		"/Volumes/www-1/web/uapp/html/js/base/menu.js",
+		"/Volumes/www-1/web/uapp/html/js/base/mobile.js",
+		"/Volumes/www-1/web/uapp/html/js/base/barcodescanner.js",
+		"/Volumes/www-1/web/uapp/html/js/base/cache.js",
+		"/Volumes/www-1/web/uapp/html/js/base/cacheUpdate.js",
+		"/Volumes/www-1/web/uapp/html/js/base/click.js",
+		"/Volumes/www-1/web/uapp/html/js/base/config.js",
+		"/Volumes/www-1/web/uapp/html/js/base/core.js",
+		"/Volumes/www-1/web/uapp/html/js/base/pattern.js",
+		"/Volumes/www-1/web/uapp/html/js/base/scrollbar.js",
+		"/Volumes/www-1/web/uapp/html/js/base/util.js",
+		"/Volumes/www-1/web/uapp/html/js/page/mealselect.js",
+		"/Volumes/www-1/web/uapp/html/js/base/message.js",
+		"/Volumes/www-1/web/ladmin/html/css/lunch.css",
+		"/Volumes/www-1/web/ladmin/html/js/page/addlunch.js",
+		"/Users/shikun/develop/mobile-upload-image/README.md",
+		"/Users/shikun/develop/mobile-upload-image/release2.js",
+		"/Volumes/www/web/ladmin/html/js/base/dialog.js",
+		"/Volumes/www/web/ladmin/html/css/lunch.css",
+		"/Volumes/www/web/ladmin/html/js/common/exit.js",
+		"/Volumes/www/web/ladmin/html/js/common/restart.js",
+		"/Volumes/www/web/ladmin/html/js/common/shutdown.js",
+		"/Volumes/www/web/uapp/html/vendor/select.js",
+		"/Volumes/www/web/uapp/html/vendor/iscroll/src/iscroll-lite.js",
+		"/Volumes/www/web/uapp/html/vendor/iscroll/src/ender.js",
+		"/Volumes/www/web/uapp/html/css/page/user.css",
+		"/Volumes/www/web/uapp/html/js/page/help.js",
+		"/Volumes/www-2/web/uapp/html/js/common/getShop.js",
+		"/Volumes/www-2/web/uapp/html/index.html",
+		"/Volumes/www-2/web/uapp/html/js/page/payorder.js",
+		"/Volumes/www-2/web/uapp/html/js/page/lunchbox.js",
+		"/Volumes/www-2/web/uapp/html/js/common/editOrder.js",
+		"/Volumes/www-2/web/uapp/html/js/page/order.js",
+		"/Volumes/www-2/web/uapp/html/js/common/address.js",
+		"/Volumes/www-2/web/uapp/html/js/page/orderlist.js",
+		"/Volumes/www-2/web/uapp/html/css/base/list.css",
+		"/Volumes/www-2/web/uapp/html/js/common/shopStatus.js",
+		"/Volumes/www-2/web/uapp/html/js/page/article.js",
+		"/Volumes/www-2/web/uapp/html/js/page/lunchAddress.js",
+		"/Volumes/www-2/web/uapp/html/js/page/dishes.js",
+		"/Volumes/www-2/web/uapp/html/js/page/modifyAddress.js",
+		"/Volumes/www-2/web/uapp/html/js/page/mealselect.js",
+		"/Volumes/www/web/ladmin/html/js/base/date.js",
+		"/Volumes/www/web/ladmin/html/js/common/checkDate.js",
+		"/Volumes/www/web/ladmin/templates/nav.php",
+		"/Volumes/www-3/web/uapp/html/js/page/location.js",
+		"/Volumes/www-3/web/uapp/html/index.html",
+		"/Users/shikun/develop/leshipai/leshisong_kaifa/web/ladmin/templates/login.html",
+		"/Users/shikun/develop/leshipai/leshisong_kaifa/web/ladmin/html/js/common/modifyPswd.js",
+		"/Users/shikun/develop/leshipai/leshisong_kaifa/web/ladmin/html/js/common/restart.js",
+		"/Users/shikun/develop/leshipai/leshisong_kaifa/web/ladmin/html/js/page/login.js",
+		"/Users/shikun/develop/leshipai/leshisong_kaifa/web/ladmin/html/js/common/shutdown.js",
+		"/Users/shikun/develop/leshipai/leshisong_kaifa/web/ladmin/html/js/common/exit.js",
+		"/Users/shikun/develop/leshipai/leshisong_kaifa/web/ladmin/html/js/page/findlunch.js",
+		"/Users/shikun/develop/leshipai/leshisong_kaifa/web/ladmin/controllers/MenuNumController.php",
+		"/Users/shikun/develop/leshipai/leshisong_kaifa/web/ladmin/controllers/IndexController.php",
+		"/Users/shikun/develop/leshipai/leshisong_kaifa/web/ladmin/controllers/BaseController.php",
+		"/Users/shikun/develop/leshipai/lunch/login.html",
+		"/Users/shikun/develop/leshipai/lunch/js/page/login.js",
+		"/Users/shikun/develop/leshipai/lunch/css/login.css",
+		"/Users/shikun/develop/leshipai/lunch/js/base/ajax.js",
+		"/Users/shikun/develop/leshipai/lunch/index.html",
+		"/Users/shikun/develop/leshipai/lunch/js/common/config.js",
+		"/Users/shikun/develop/leshipai/lunch/js/base/message.js"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			"",
+			"../../../",
+			"html",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"rgb(255, 244, 32)",
+			"rgb(243, 243, 74)",
+			"&nbsp;&nbsp;文章1",
+			"35",
+			";",
+			"show",
+			"slices",
+			"nivo-slice",
+			"nav-slice",
+			"slideWrapper",
+			"./",
+			"#name",
+			"name",
+			"Group",
+			"group",
+			"Group",
+			"UserInfo",
+			"userinfo",
+			"UserInfo",
+			"userinfo",
+			"UserInfo",
+			"' '",
+			"#yes-pay",
+			"option.scroll",
+			"fn",
+			"scroll",
+			"checked",
+			"Checked",
+			"checked",
+			"getUserAddress",
+			"GetShop.getLunchAddress()",
+			"noshop",
+			"getUserAddress",
+			"console",
+			"png",
+			"/img/hongbao/hongbao10.png",
+			"shop.jpg",
+			"yes-pay",
+			"initialize",
+			"isZero",
+			"initialize",
+			"isShort",
+			"不能支付",
+			"isShort",
+			"allPayMoney",
+			"ndPayOrderBtn",
+			"setBuffetShop",
+			"orderDescription",
+			"j-order-shop",
+			"displayShopInfo",
+			"refresh",
+			"selectTime",
+			"takeoutBUsy",
+			"',\n",
+			"takeoutBUsy",
+			"^img$",
+			"^img1$",
+			"^img",
+			"img",
+			"20",
+			"editImage",
+			"release",
+			"img",
+			"console.log",
+			"JSON.stringify",
+			"header",
+			",",
+			"console.log",
+			"voucher5",
+			"guo_",
+			"lunch_",
+			"calculateVouchers",
+			"data-name",
+			"vouchersObj",
+			"processStatus",
+			"islook",
+			"时尚",
+			"menu_table",
+			"}\n",
+			".pg-userrelease ",
+			"console.log",
+			"data[i]",
+			"prefixStyle",
+			"START_EV",
+			"_start",
+			"onScrollEnd",
+			"scrollEnd",
+			"that.scrollTo(",
+			"scrollTo",
+			"stop",
+			"_pos",
+			"_startAni",
+			"systemli",
+			"lastShop",
+			"uuid",
+			"UUID",
+			"uuid",
+			"UUID",
+			"uuid",
+			"orderId",
+			"new Address",
+			"takeoutBusy",
+			"bookingBusy",
+			"nobusy",
+			"count",
+			"step",
+			"Step",
+			"step",
+			"updateTimeout",
+			"initialize",
+			"add-takeout-btn",
+			"canjuCount",
+			"getTakeoutShop",
+			"GetShop.getShop",
+			"$(this).find('span[data-type=\"count\"]')",
+			"ndMenuCount",
+			"editDishes",
+			"clearMenu",
+			"clearMenu[type]",
+			"js/",
+			"css/",
+			"name=\"Submit\"",
+			"name=\"textfield\"",
+			"prevPage",
+			"displayMsg",
+			"start",
+			"right",
+			"webkit"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+			""
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "header.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 993,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								742,
+								742
+							]
+						],
+						"settings":
+						{
+							"is_xml": false,
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "show.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2395,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1596,
+								1596
+							]
+						],
+						"settings":
+						{
+							"is_xml": false,
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 436.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "js/lib/jquery.slider.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 20480,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1939,
+								1939
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1703.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "index.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 656,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								418,
+								418
+							]
+						],
+						"settings":
+						{
+							"is_xml": false,
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "css/layout.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4285,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								484,
+								484
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 154.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "about.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1880,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								258,
+								258
+							]
+						],
+						"settings":
+						{
+							"is_xml": false,
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "css/global.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 490,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								215,
+								215
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "news.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1880,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								115,
+								115
+							]
+						],
+						"settings":
+						{
+							"is_xml": false,
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "js/page/nav.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1815,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								860,
+								860
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 82.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 26.0
+	},
+	"input":
+	{
+		"height": 34.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"project": "tudou.sublime-project",
+	"replace":
+	{
+		"height": 48.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"",
+				".bowerrc"
+			],
+			[
+				"order",
+				"js/page/order.js"
+			],
+			[
+				"shop",
+				"js/page/shop.js"
+			],
+			[
+				"mai",
+				"js/base/main.js"
+			],
+			[
+				"help.js",
+				"js/page/help.js"
+			],
+			[
+				"help",
+				"help.html"
+			],
+			[
+				"sys",
+				"js/page/systemSet.js"
+			],
+			[
+				"dialog",
+				"js/base/dialog.js"
+			],
+			[
+				"order.js",
+				"js/page/order.js"
+			],
+			[
+				"data.js",
+				"js/base/data.js"
+			],
+			[
+				"mess",
+				"js/base/message.js"
+			],
+			[
+				"dialog.js",
+				"js/base/dialog.js"
+			],
+			[
+				"cache.js",
+				"js/base/cache.js"
+			],
+			[
+				"page.js",
+				"js/base/page.js"
+			],
+			[
+				"feedba",
+				"js/page/feedback.js"
+			],
+			[
+				"cookie",
+				"js/base/cookie.js"
+			],
+			[
+				"index.js",
+				"js/page/index.js"
+			],
+			[
+				"layer.js",
+				"js/lib/layer/layer.js"
+			],
+			[
+				"swipe.js",
+				"js/lib/swipe.js"
+			],
+			[
+				"menu.js",
+				"js/base/menu.js"
+			],
+			[
+				"home.js",
+				"js/page/home.js"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 219.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
