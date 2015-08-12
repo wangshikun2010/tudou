@@ -26,7 +26,7 @@
             click: function(b, a) {
                 return true;
             }
-        })
+        });
 	});
 </script>
 </html>
