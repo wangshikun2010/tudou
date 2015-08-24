@@ -28,3 +28,6 @@ node_modules
 
 # Debug log from npm
 npm-debug.log
+
+# 使用bower安装的库文件
+src/js/lib

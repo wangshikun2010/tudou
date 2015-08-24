@@ -1,0 +1,17 @@
+{
+  "name": "tudou",
+  "version": "0.0.0",
+  "homepage": "https://github.com/wangshikun2010/tudou",
+  "authors": [
+    "wangshikun2010@gmail.com <wangshikun2010>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "./src/js/lib",
+    "test",
+    "tests"
+  ]
+}
