@@ -9,24 +9,13 @@ var mongoose = require('mongoose');
 //     next();
 // });
 
-// 请求首页
-// router.get('/admin/', function(req, res, next) {
-router.get('/', function(req, res, next) {
-    console.log('request home page');
+var myDb = openDb();
 
-    // 定位到首页
+// 请求首页
+router.get('/', function(req, res, next) {
+    // 定位到input
     res.render('admin/input', {
-        title: '挺好的',
-        data: [
-            {
-                id: 1,
-                content: '1111'
-            },
-            {
-                id: 2,
-                content: '2222'
-            }
-        ]
+        title: '输入页'
     });
 
 });
@@ -60,9 +49,9 @@ function openDb() {
     // }
 
     // // 添加 mongoose 静态方法，静态方法在Model层就能使用
-    // mongooseSchema.statics.findbytitle = function(title, callback) {
-    //     return this.model('mongoose').find({title: title}, callback);
-    // }
+    mongooseSchema.statics.findbytitle = function(title, callback) {
+        return this.model('mongoose').find({title: title}, callback);
+    }
 
     // model
     var mongooseModel = db.model('mongoose', mongooseSchema);
@@ -73,13 +62,13 @@ function openDb() {
     };
 }
 
-// 关于我们
+// 新增数据
 router.get('/add', function(req, res, next) {
     console.log('request add interface');
 
     console.log(req.query);
 
-    var myDb =
+    // var myDb = openDb();
 
     res.json({
         status: 200,
@@ -106,15 +95,61 @@ router.get('/add', function(req, res, next) {
     // });
 
     // 增加记录 基于model操作
-    mongooseModel.create(doc, function(error) {
+    myDb.mongooseModel.create(doc, function(error) {
         if (error) {
-            console.log('保存失败');
+            console.log('新增失败');
         } else {
-            console.log('保存成功');
+            console.log('新增成功');
         }
 
-        db.close();
+        // myDb.db.close();
     });
+
+});
+
+// 列表
+router.get('/list', function(req, res) {
+
+    myDb.mongooseModel.findbytitle('张三', function(error, result) {
+        if (error) {
+            console.log(error);
+        } else {
+            // console.log('search result');
+            console.log(result);
+
+            // 定位到list
+            res.render('admin/list', {
+                title: '列表页',
+                list: result
+            });
+        }
+
+    });
+
+});
+
+// 列表
+router.get('/edit', function(req, res) {
+
+    // console.log(req);
+
+    // myDb.mongooseModel.find({id: "55dab7f793eaa78ebd402754"} function(error, result) {
+    //     if (error) {
+    //         console.log(error);
+    //     } else {
+    //         console.log(result);
+
+            res.render('admin/edit', {
+                title: '详情页',
+                data: {
+                    id: '1',
+                    title: '王世坤',
+                    content: '你在干啥呢'
+                }
+            });
+        // }
+
+    // });
 
 });
 
@@ -135,14 +170,13 @@ router.get('/update', function(req, res, next) {
         upsert: true
     };
 
-    mongooseModel.uadate(conditions, update, options, function(error) {
+    myDb.mongooseModel.update(conditions, update, options, function(error) {
         if (error) {
             console.log('更新失败');
         } else {
             console.log('更新成功');
+            res.send('更新成功');
         }
-
-        db.close();
     });
 });
 

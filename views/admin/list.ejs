@@ -1,0 +1,31 @@
+<% include header %>
+<div class="container">
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>标题</th>
+                <th>内容</th>
+                <th>时间</th>
+                <th>操作</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% for(var i=0; i<list.length; i++) { %>
+                <tr>
+                    <td><%= list[i].id %></td>
+                    <td><%= list[i].title %></td>
+                    <td><%= list[i].content %></td>
+                    <td><%= list[i].time %></td>
+                    <td>
+                        <a href="" class="btn btn-info">编辑</a>
+                        <button class="btn btn-info">编辑</button>
+                        <button class="btn btn-danger">删除</button>
+                    </td>
+                </tr>
+            <% } %>
+        </tbody>
+    </table>
+</div>
+</body>
+</html>
