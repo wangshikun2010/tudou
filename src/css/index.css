@@ -1,0 +1,349 @@
+@charset "utf-8";
+body {
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+  font-family: 'Microsoft Yahei';
+}
+ul,
+dl,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+p {
+  padding: 0;
+  margin: 0;
+}
+ul,
+li {
+  list-style: none;
+}
+img {
+  border: medium none;
+  display: inline;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  color: #fff;
+}
+.clearix {
+  zoom: 1;
+}
+.clearfix:after,
+.clearfix:before {
+  content: "";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+  overflow: hidden;
+}
+/* header */
+.td_header {
+  background: #e1cc00;
+  height: 80px;
+  margin: 0 0 10px 0;
+  padding: 0 50px;
+}
+/* main */
+#main {
+  width: 100%;
+  padding: 0 50px;
+  overflow: hidden;
+  display: block;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+/* footer */
+#footer {
+  background: #e1cc00;
+  height: 60px;
+  margin: 10px 0 0 0;
+}
+#footer p {
+  padding-top: 20px;
+  text-align: center;
+  color: #fff;
+}
+.td_header img {
+  float: left;
+  width: 93px;
+  margin-top: 15px;
+}
+/* 导航 */
+.nav {
+  float: left;
+  height: 80px;
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: bold;
+}
+.nav a {
+  /*margin: 40px;*/
+}
+.nav li a:hover,
+.nav li a:active {
+  border: none;
+  text-decoration: none;
+}
+.nav .current {
+  /*color: #FFFFFF;*/
+}
+.nav .current a {
+  /*color: #FFFFFF;*/
+}
+.nav li {
+  float: left;
+  height: 80px;
+  line-height: 80px;
+}
+.nav li.back {
+  background: url(../images/b_slider.png) center bottom no-repeat;
+  width: 70px;
+  height: 60px;
+  z-index: 8;
+  position: absolute;
+}
+.nav li a {
+  display: block;
+  z-index: 10;
+  position: relative;
+  height: 80px;
+  line-height: 80px;
+  color: #FFFFFF;
+  padding: 0 30px;
+}
+/* 展示列表 */
+.show_list li {
+  display: inline-block;
+  margin-top: 10px;
+}
+.show_list li img {
+  display: inline-block;
+}
+.show_list li:nth-child(1) img {
+  width: 425px;
+  width: 466px;
+  margin-right: 12px;
+}
+.show_list li:nth-child(2) img {
+  width: 622px;
+  width: 681px;
+}
+.show_list li:nth-child(3) img {
+  width: 573px;
+  margin-right: 12px;
+}
+.show_list li:nth-child(4) img {
+  width: 574px;
+}
+.show_list li:nth-child(5) img {
+  width: 614px;
+  margin-right: 12px;
+}
+.show_list li:nth-child(6) img {
+  width: 533px;
+}
+/* 装修案例 */
+.show_container li {
+  float: left;
+  width: 340px;
+  margin: 0 15px 15px 0;
+}
+.show_container li:nth-child(3n+0) {
+  margin: 0 0 15px 0;
+}
+.item_content img {
+  width: 340px;
+  height: 250px;
+}
+.item_footer {
+  height: 40px;
+  line-height: 40px;
+  padding: 0 0 0 10px;
+  border: 1px solid #CCCCCC;
+  border-top: none;
+}
+/* 登录 */
+.login p {
+  margin: 10px 10px;
+}
+.login p input[type="text"],
+.login p input[type="password"] {
+  width: 200px;
+  height: 25px;
+  border: 1px solid #CCCCCC;
+  font-size: 18px;
+}
+.login p input[type="reset"],
+.login p input[type="submit"] {
+  width: 70px;
+  height: 30px;
+  border: 1px solid #CCCCCC;
+}
+#side {
+  color: #999;
+  width: 180px;
+  height: 580px;
+  float: left;
+  background: #F5F5F5;
+}
+#side dd {
+  cursor: pointer;
+  height: 40px;
+  line-height: 40px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+}
+#side dd:hover {
+  color: #FFFFFF;
+  background: #CCC;
+}
+#side_main {
+  float: right;
+  width: 850px;
+}
+/* 清除浮动 */
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+  overflow: hidden;
+}
+.clearfix {
+  zoom: 1;
+}
+/*============================*/
+/*=== Custom Slider Styles ===*/
+/*============================*/
+/* The Nivo Slider styles */
+.nivoSlider {
+  position: relative;
+  width: 694px;
+  min-height: 550px;
+}
+.nivoSlider img {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+/* If an image is wrapped in a link */
+.nivoSlider a.nivo-imageLink {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  z-index: 60;
+  display: none;
+}
+/* The slices in the Slider */
+.nivo-slice {
+  display: block;
+  position: absolute;
+  z-index: 50;
+  height: 100%;
+}
+/* Caption styles */
+.nivo-caption {
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  background: #000;
+  color: #fff;
+  opacity: 0.8;
+  /* Overridden by captionOpacity setting */
+  width: 100%;
+  z-index: 89;
+}
+.nivo-caption p {
+  padding: 5px;
+  margin: 0;
+}
+.nivo-caption a {
+  display: inline !important;
+}
+.nivo-html-caption {
+  display: none;
+}
+/* Direction nav styles (e.g. Next & Prev) */
+.nivo-directionNav a {
+  position: absolute;
+  top: 45%;
+  z-index: 99;
+  cursor: pointer;
+}
+.nivo-prevNav {
+  left: 0px;
+}
+.nivo-nextNav {
+  right: 0px;
+}
+/* Control nav styles (e.g. 1,2,3...) */
+.nivo-controlNav a {
+  position: relative;
+  z-index: 99;
+  cursor: pointer;
+}
+.nivo-controlNav a.active {
+  font-weight: bold;
+}
+.nivo-controlNav {
+  position: relative;
+  left: 50%;
+  top: 95%;
+  width: 700px;
+  margin: 0 0 0 -36px;
+}
+.nivo-controlNav a {
+  display: block;
+  width: 50px;
+  height: 22px;
+  background: url(../images/bullets.png) no-repeat;
+  text-indent: -9999px;
+  border: 0;
+  margin-right: 3px;
+  float: left;
+}
+.nivo-controlNav a.active {
+  background-position: 0 -22px;
+}
+.nivo-directionNav a {
+  display: block;
+  width: 30px;
+  height: 60px;
+  background: url(../images/arrows.png) no-repeat;
+  text-indent: -9999px;
+  border: 0;
+}
+a.nivo-nextNav {
+  background-position: -30px 0;
+  right: 15px;
+}
+a.nivo-prevNav {
+  left: 15px;
+}
+.nivo-caption {
+  text-shadow: none;
+  height: 46px;
+  font-family: Helvetica, Arial, sans-serif;
+}
+.nivo-caption a {
+  color: #efe9d1;
+  text-decoration: underline;
+}
