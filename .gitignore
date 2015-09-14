@@ -31,3 +31,6 @@ npm-debug.log
 
 # 使用bower安装的库文件
 src/js/lib
+
+# 忽略文件
+*.less

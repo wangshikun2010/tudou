@@ -1,23 +1,59 @@
-﻿	<% include header %>
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title><%= title %></title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7"/>
+    <link rel="stylesheet" href="/css/index.css"/>
+    <script type="text/javascript" src="./js/lib/jquery-1.4.3.min.js"></script>
+    <script type="text/javascript" src="./js/lib/jquery.slider.js"></script>
+    <script type="text/javascript" src="./js/lib/jquery.nav.js"></script>
+</head>
+<body>
+	<% include td_header %>
 
 	<div id="main">
-		<div id="slider-wrapper">
+		<!-- <div id="slider-wrapper">
 			<div id="slider" class="nivoSlider">
-			   <img src="./images/1.jpg"/>
-			   <img src="./images/2.jpg"/>
+			   <img src="/images/1.jpg"/>
+			   <img src="/images/2.jpg"/>
 			</div>
-		</div>
+		</div> -->
+
+        <section class="show_list">
+            <ul>
+                <li>
+                    <img src="/images/show_1_1.jpg" alt="" />
+                </li>
+                <li>
+                    <img src="/images/show_5_5.jpg" alt="" />
+                </li>
+                <li>
+                    <img src="/images/show_2_2.jpg" alt="" />
+                </li>
+                <li>
+                    <img src="/images/show_3_3.jpg" alt="" />
+                </li>
+                <li>
+                    <img src="/images/show_6_6.jpg" alt="" />
+                </li>
+                <li>
+                    <img src="/images/show_4_4.jpg" alt="" />
+                </li>
+            </ul>
+        </section>
+
 	</div>
 
 	<% include footer %>
 </body>
 <script type="text/javascript">
 	$(function() {
-		$('#slider').nivoSlider({
-            slices: 10
-            // pauseTime: 100000,
-            // animSpeed: 70000
-        });
+		// $('#slider').nivoSlider({
+  //           slices: 10
+  //           // pauseTime: 100000,
+  //           // animSpeed: 70000
+  //       });
         $("#nav").lavaLamp({
             fx: "backout",
             speed: 700,
