@@ -33,6 +33,7 @@ a {
 a:hover {
   color: #fff;
 }
+/* 清除浮动 */
 .clearix {
   zoom: 1;
 }

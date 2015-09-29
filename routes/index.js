@@ -2,21 +2,46 @@
 // 引入库
 var express = require('express');
 var router = express.Router();
-var mongoose = require('mongoose');
+var mongo = require('./mongo');
+
+// Schema 结构
+var mongooseSchema = new mongo.Schema({
+    title    : {type : String},
+    content  : {type : String},
+    time     : {type : Date, default: new Date().getTime()},
+    image    : {type : String},
+    image_s  : {type : String}
+});
+
+// 添加 mongoose 静态方法，静态方法在Model层就能使用
+mongooseSchema.statics.findbytitle = function(title, callback) {
+    return this.model('mongoose').find({title: title}, callback);
+}
+
+// model
+var mongooseModel = mongo.model('mongoose', mongooseSchema);
 
 // 请求首页
 router.get('/', function(req, res, next) {
-    // 首页
     res.render('index', {
-        title: '土豆装修工作室'
+        title: ''
     });
-
 });
 
 // 装修案例
 router.get('/show', function(req, res, next) {
-    res.render('show', {
-        title: '装修案例'
+    mongooseModel.find(function(error, result) {
+        if (error) {
+            console.log(error);
+        } else {
+            console.log(result);
+
+            // 定位到list
+            res.render('show', {
+                title: '列表页',
+                list: result
+            });
+        }
     });
 });
 
