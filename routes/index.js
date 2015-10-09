@@ -14,19 +14,12 @@ var mongooseSchema = new mongo.Schema({
     image_s  : {type : String}
 });
 
-// 添加 mongoose 静态方法，静态方法在Model层就能使用
-mongooseSchema.statics.findbytitle = function(title, callback) {
-    return this.model('mongoose').find({title: title}, callback);
-}
-
 // model
 var mongooseModel = mongo.model('mongoose', mongooseSchema);
 
 // 请求首页
 router.get('/', function(req, res, next) {
-    res.render('index', {
-        title: ''
-    });
+    res.render('index');
 });
 
 // 装修案例
@@ -35,9 +28,6 @@ router.get('/show', function(req, res, next) {
         if (error) {
             console.log(error);
         } else {
-            console.log(result);
-
-            // 定位到list
             res.render('show', {
                 title: '列表页',
                 list: result
@@ -46,9 +36,39 @@ router.get('/show', function(req, res, next) {
     });
 });
 
+// 案例详情
+router.get(/show\/.+\.html$/, function(req, res) {
+    // console.log(req.url);
+
+    var first = req.url.substr(req.url.lastIndexOf('/') + 1);
+    var id = first.substr(0, first.lastIndexOf('.'));
+
+    // console.log(id);
+
+    mongooseModel.find({ _id: id }, function(error, result) {
+        if (error) {
+            console.log(error);
+        } else {
+            res.render('detail', {
+                title: result[0].title,
+                data: result[0]
+            });
+        }
+    });
+});
+
+// 最新动态
+router.get('/news', function(req, res, next) {
+    res.render('news', {
+        title: '最新动态'
+    });
+});
+
 // 关于我们
 router.get('/about', function(req, res, next) {
-    res.render('about');
+    res.render('about', {
+        title: '关于我们'
+    });
 });
 
 module.exports = router;

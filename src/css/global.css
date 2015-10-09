@@ -1,4 +1,5 @@
 @charset "utf-8";
+/*@yellow: rgb(225, 204, 0);*/
 body {
   padding: 0;
   margin: 0;
@@ -45,4 +46,65 @@ a:hover {
 .clearfix:after {
   clear: both;
   overflow: hidden;
+}
+.td_header {
+  background: #6f5499;
+  height: 80px;
+  /*margin: 0 0 10px 0;*/
+  padding: 0 50px;
+  /* 导航 */
+}
+.td_header .nav {
+  float: left;
+  height: 80px;
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: bold;
+}
+.td_header .nav li a:hover,
+.td_header .nav li a:active {
+  border: none;
+  text-decoration: none;
+}
+.td_header .nav li {
+  float: left;
+  height: 80px;
+  line-height: 80px;
+}
+.td_header .nav li.back {
+  background: url(../images/b_slider.png) center bottom no-repeat;
+  width: 70px;
+  height: 60px;
+  z-index: 8;
+  position: absolute;
+}
+.td_header .nav li a {
+  display: block;
+  z-index: 10;
+  position: relative;
+  height: 80px;
+  line-height: 80px;
+  color: #FFFFFF;
+  padding: 0 30px;
+}
+.container {
+  width: 100%;
+  padding: 0 50px;
+  overflow: hidden;
+  display: block;
+  background: #f5f5f5;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+/* footer */
+#footer {
+  background: #6f5499;
+  height: 60px;
+  /*margin: 10px 0 0 0;*/
+}
+#footer p {
+  padding-top: 20px;
+  text-align: center;
+  color: #fff;
 }

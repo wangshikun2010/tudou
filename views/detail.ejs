@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title><%= title %></title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" href="/css/detail.css"/>
+    <script src="/js/lib/jquery/dist/jquery.min.js"></script>
+</head>
+<body>
+    <% include td_header %>
+    <div class="container">
+        <section class="exhibition">
+            <h1>图片展示</h1>
+            <img src="<%= data.image %>">
+        </section>
+        <section class="profile">
+            <h1>描述</h1>
+            <div><%= data.content %></div>
+        </section>
+        <!-- UY BEGIN -->
+        <div id="uyan_frame"></div>
+        <script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=2063725"></script>
+        <!-- UY END -->
+    </div>
+    <% include footer %>
+</body>
+</html>
