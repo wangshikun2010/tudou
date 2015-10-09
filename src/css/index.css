@@ -48,6 +48,10 @@ a:hover {
 }
 /* header */
 .td_header {
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  width: 100%;
   background: #e1cc00;
   height: 80px;
   margin: 0 0 10px 0;
@@ -59,6 +63,7 @@ a:hover {
   padding: 0 50px;
   overflow: hidden;
   display: block;
+  background: #f5f5f5;
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -153,11 +158,58 @@ a:hover {
 .show_list li:nth-child(6) img {
   width: 533px;
 }
+nav.menu {
+  position: fixed;
+  right: 0;
+  top: 50%;
+  z-index: 2;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+}
+nav.menu li {
+  width: 100px;
+  font-size: 20px;
+  text-align: center;
+}
+nav.menu li a {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  color: #e1cc00;
+  background: #fff;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+nav.menu li.current a {
+  width: 14px;
+  height: 14px;
+  border-radius: 8px;
+  background: #e1cc00;
+  border: none;
+}
+.section {
+  background: #f5f5f5;
+}
+.section img {
+  display: block;
+  max-width: 80%;
+  margin: 0 auto;
+}
 /* 装修案例 */
 .show_container li {
   float: left;
   width: 377px;
   margin: 0 15px 15px 0;
+  background: #fff;
+  color: #666;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+.show_container li:hover {
+  -webkit-box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  -webkit-transform: translate3d(0, -2px, 0);
+  transform: translate3d(0, -2px, 0);
 }
 .show_container li:nth-child(3n+0) {
   margin: 0 0 15px 0;
@@ -170,25 +222,6 @@ a:hover {
   height: 40px;
   line-height: 40px;
   padding: 0 0 0 10px;
-  border: 1px solid #CCCCCC;
-  border-top: none;
-}
-/* 登录 */
-.login p {
-  margin: 10px 10px;
-}
-.login p input[type="text"],
-.login p input[type="password"] {
-  width: 200px;
-  height: 25px;
-  border: 1px solid #CCCCCC;
-  font-size: 18px;
-}
-.login p input[type="reset"],
-.login p input[type="submit"] {
-  width: 70px;
-  height: 30px;
-  border: 1px solid #CCCCCC;
 }
 #side {
   color: #999;

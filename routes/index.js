@@ -3,12 +3,13 @@
 var express = require('express');
 var router = express.Router();
 var mongo = require('./mongo');
+var moment = require('moment');
 
 // Schema 结构
 var mongooseSchema = new mongo.Schema({
     title    : {type : String},
     content  : {type : String},
-    time     : {type : Date, default: new Date().getTime()},
+    time     : {type : String, default: new Date().getTime()},
     image    : {type : String},
     image_s  : {type : String}
 });

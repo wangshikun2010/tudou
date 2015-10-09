@@ -1,6 +1,94 @@
 ﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,minimal-ui" />
+    <title><%= title %></title>
+    <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <script type="text/javascript" src="js/lib/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="js/lib/jquery.fullPage.min.js"></script>
+</head>
+
+<body>
+    <div class="td_header clearfix">
+        <!-- <img src="/images/logo4.png" alt="" /> -->
+        <ul id="nav" class="nav clearfix">
+            <li><a href="/">第一部分</a></li>
+            <li><a href="/show">第二部分</a></li>
+            <li><a href="/news">第三部分</a></li>
+            <li><a href="/about">第四部分</a></li>
+        </ul>
+    </div>
+    <nav class="menu clearfix">
+        <ul id="menu" class="clearfix">
+            <li><a href="#page1"></a></li>
+            <li><a href="#page2"></a></li>
+            <li><a href="#page3"></a></li>
+            <li><a href="#page4"></a></li>
+            <li><a href="#page5"></a></li>
+        </ul>
+    </nav>
+    <div id="fullpage">
+        <div class="section p1">
+            <img src="/images/show/upload_2cec4b816f4729b5b0eaea75e05173fa.png" alt="" />
+        </div>
+        <div class="section p2">
+            <img src="/images/show/upload_d327158f11931d93c73e64f839d0312d.png" alt="" />
+        </div>
+        <div class="section p3">
+            <img src="/images/show/upload_e469d3facd3fcc703c19f2bdeb092aad.png" alt="" />
+        </div>
+        <div class="section p4">
+            <img src="/images/show/upload_2d9c8c3b2a074fc867c0136adfc31705.png" alt="" />
+        </div>
+        <div class="section p5">
+            <img src="/images/show/upload_2cec4b816f4729b5b0eaea75e05173fa.png" alt="" />
+        </div>
+        <div class="section fp-auto-height p6">
+            <div id="footer">
+                <p></p>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $mlNav = $('.td_header');
+            $('#fullpage').fullpage({
+                anchors: ['page1', 'page2', 'page3', 'page4', 'page5', 'page6'],
+                menu: '#menu',
+                // 页面结构生成后的回调函数
+                afterRender: function(anchorLink, index, slideAnchor, slideIndex) {
+                    $('a[href="#page1"]').parent('li').addClass('current');
+                },
+                // 滚动完的回调函数
+                afterLoad: function(anchorLink, index) {
+                    // console.log(anchorLink, index);
+                },
+                // 滚动前的回调函数
+                onLeave: function(index, nextIndex, direction) {
+                    console.log(index, nextIndex, direction);
+                    $('a[href="#page'+index+'"]').parent('li').removeClass('current');
+                    $('a[href="#page'+nextIndex+'"]').parent('li').addClass('current');
+
+                    if (index == 2 && direction == 'up'){
+                        $mlNav.animate({
+                            top: 0
+                        }, 680);
+                    } else {
+                        $mlNav.animate({
+                            top: -80
+                        }, 400);
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>
+<!-- <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
     <title><%= title %></title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7"/>
@@ -9,10 +97,10 @@
     <script type="text/javascript" src="./js/lib/jquery.slider.js"></script>
     <script type="text/javascript" src="./js/lib/jquery.nav.js"></script>
 </head>
-<body>
-	<% include td_header %>
+<body> -->
+    <!-- <% include td_header %> -->
 
-	<div id="main">
+    <!-- <div id="main">
         <section class="show_list">
             <ul>
                 <li>
@@ -35,13 +123,12 @@
                 </li>
             </ul>
         </section>
+    </div> -->
 
-	</div>
-
-	<% include footer %>
-</body>
+    <!-- <% include footer %> -->
+<!-- </body>
 <script type="text/javascript">
-	$(function() {
+    $(function() {
         $("#nav").lavaLamp({
             fx: "backout",
             speed: 700,
@@ -49,6 +136,6 @@
                 return true;
             }
         });
-	});
+    });
 </script>
-</html>
+</html> -->

@@ -6,8 +6,7 @@
                 <tr>
                     <th>ID</th>
                     <th>标题</th>
-                    <th>内容</th>
-                    <th>图片路径</th>
+                    <th>描述</th>
                     <th>时间</th>
                     <th>操作</th>
                 </tr>
@@ -22,8 +21,6 @@
                     <td>
                         <%= list[i].content %></td>
                     <td>
-                        <%= list[i].image %></td>
-                    <td>
                         <%= list[i].time %></td>
                     <td>
                         <a href="/admin/edit?id=<%= list[i].id %>" class="btn btn-info">编辑</a>
@@ -34,9 +31,6 @@
         </table>
     </div>
 </div>
-
-<!-- Button trigger modal -->
-<!-- <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">Launch demo modal</button> -->
 
 <!-- Modal -->
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">

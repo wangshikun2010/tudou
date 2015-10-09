@@ -17,6 +17,7 @@
   },
   "devDependencies": {
     "formidable": "~1.0.17",
-    "gm": "~1.20.0"
+    "gm": "~1.20.0",
+    "moment": "^2.10.6"
   }
 }
