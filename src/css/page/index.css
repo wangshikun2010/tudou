@@ -50,9 +50,13 @@ a:hover {
 .td_header {
   background: #6f5499;
   height: 80px;
-  /*margin: 0 0 10px 0;*/
   padding: 0 50px;
   /* 导航 */
+}
+.td_header img {
+  float: left;
+  width: 93px;
+  margin-top: 15px;
 }
 .td_header .nav {
   float: left;
@@ -101,24 +105,17 @@ a:hover {
 #footer {
   background: #6f5499;
   height: 60px;
-  /*margin: 10px 0 0 0;*/
 }
 #footer p {
   padding-top: 20px;
   text-align: center;
   color: #fff;
 }
-/* header */
 .td_header {
   position: fixed;
   top: 0;
   z-index: 10;
   width: 100%;
-}
-.td_header img {
-  float: left;
-  width: 93px;
-  margin-top: 15px;
 }
 nav.menu {
   position: fixed;

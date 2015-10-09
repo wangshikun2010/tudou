@@ -15,7 +15,6 @@ var mongooseModel = mongo.model('mongoose');
 
 // 请求首页
 router.get('/', function(req, res, next) {
-    // 定位到input
     res.render('admin/input', {
         title: '录入页'
     });
