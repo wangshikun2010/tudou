@@ -1,66 +1,79 @@
-﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
 <head>
-    <title><%= title %></title>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7"/>
-    <link rel="stylesheet" href="/css/index.css"/>
-    <script type="text/javascript" src="./js/lib/jquery-1.4.3.min.js"></script>
-    <script type="text/javascript" src="./js/lib/jquery.slider.js"></script>
-    <script type="text/javascript" src="./js/lib/jquery.nav.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,minimal-ui" />
+    <title>土豆装修设计室</title>
+    <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <script type="text/javascript" src="js/lib/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="js/lib/jquery.fullPage.min.js"></script>
 </head>
 <body>
-	<% include td_header %>
+    <% include td_header %>
+    <nav class="menu">
+        <ul id="menu" class="clearfix">
+            <li><a href="#page1"></a></li>
+            <li><a href="#page2"></a></li>
+            <li><a href="#page3"></a></li>
+            <li><a href="#page4"></a></li>
+            <li><a href="#page5"></a></li>
+        </ul>
+    </nav>
+    <div id="fullpage">
+        <div class="section p1">
+            <img src="/images/show/upload_2cec4b816f4729b5b0eaea75e05173fa.png" alt="" />
+        </div>
+        <div class="section p2">
+            <img src="/images/show/upload_d327158f11931d93c73e64f839d0312d.png" alt="" />
+        </div>
+        <div class="section p3">
+            <img src="/images/show/upload_e469d3facd3fcc703c19f2bdeb092aad.png" alt="" />
+        </div>
+        <div class="section p4">
+            <img src="/images/show/upload_2d9c8c3b2a074fc867c0136adfc31705.png" alt="" />
+        </div>
+        <div class="section p5">
+            <img src="/images/show/upload_2cec4b816f4729b5b0eaea75e05173fa.png" alt="" />
+        </div>
+        <div class="section fp-auto-height p6">
+            <div id="footer">
+                <p></p>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $mlNav = $('.td_header');
+            $('#fullpage').fullpage({
+                anchors: ['page1', 'page2', 'page3', 'page4', 'page5', 'page6'],
+                menu: '#menu',
+                // 页面结构生成后的回调函数
+                afterRender: function(anchorLink, index, slideAnchor, slideIndex) {
+                    $('a[href="#page1"]').parent('li').addClass('current');
+                },
+                // 滚动完的回调函数
+                afterLoad: function(anchorLink, index) {
+                    // console.log(anchorLink, index);
+                },
+                // 滚动前的回调函数
+                onLeave: function(index, nextIndex, direction) {
+                    // console.log(index, nextIndex, direction);
+                    $('a[href="#page'+index+'"]').parent('li').removeClass('current');
+                    $('a[href="#page'+nextIndex+'"]').parent('li').addClass('current');
 
-	<div id="main">
-		<!-- <div id="slider-wrapper">
-			<div id="slider" class="nivoSlider">
-			   <img src="/images/1.jpg"/>
-			   <img src="/images/2.jpg"/>
-			</div>
-		</div> -->
-
-        <section class="show_list">
-            <ul>
-                <li>
-                    <img src="/images/show_1_1.jpg" alt="" />
-                </li>
-                <li>
-                    <img src="/images/show_5_5.jpg" alt="" />
-                </li>
-                <li>
-                    <img src="/images/show_2_2.jpg" alt="" />
-                </li>
-                <li>
-                    <img src="/images/show_3_3.jpg" alt="" />
-                </li>
-                <li>
-                    <img src="/images/show_6_6.jpg" alt="" />
-                </li>
-                <li>
-                    <img src="/images/show_4_4.jpg" alt="" />
-                </li>
-            </ul>
-        </section>
-
-	</div>
-
-	<% include footer %>
-</body>
-<script type="text/javascript">
-	$(function() {
-		// $('#slider').nivoSlider({
-  //           slices: 10
-  //           // pauseTime: 100000,
-  //           // animSpeed: 70000
-  //       });
-        $("#nav").lavaLamp({
-            fx: "backout",
-            speed: 700,
-            click: function(b, a) {
-                return true;
-            }
+                    if (index == 2 && direction == 'up'){
+                        $mlNav.animate({
+                            top: 0
+                        }, 680);
+                    } else {
+                        $mlNav.animate({
+                            top: -80
+                        }, 400);
+                    }
+                }
+            });
         });
-	});
-</script>
+    </script>
+</body>
 </html>

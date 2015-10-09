@@ -1,0 +1,143 @@
+@charset "utf-8";
+/*@yellow: rgb(225, 204, 0);*/
+body {
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+  font-family: 'Microsoft Yahei';
+}
+ul,
+dl,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+p {
+  padding: 0;
+  margin: 0;
+}
+ul,
+li {
+  list-style: none;
+}
+img {
+  border: medium none;
+  display: inline;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  color: #fff;
+}
+/* 清除浮动 */
+.clearix {
+  zoom: 1;
+}
+.clearfix:after,
+.clearfix:before {
+  content: "";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+  overflow: hidden;
+}
+.td_header {
+  background: #6f5499;
+  height: 80px;
+  /*margin: 0 0 10px 0;*/
+  padding: 0 50px;
+  /* 导航 */
+}
+.td_header .nav {
+  float: left;
+  height: 80px;
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: bold;
+}
+.td_header .nav li a:hover,
+.td_header .nav li a:active {
+  border: none;
+  text-decoration: none;
+}
+.td_header .nav li {
+  float: left;
+  height: 80px;
+  line-height: 80px;
+}
+.td_header .nav li.back {
+  background: url(../images/b_slider.png) center bottom no-repeat;
+  width: 70px;
+  height: 60px;
+  z-index: 8;
+  position: absolute;
+}
+.td_header .nav li a {
+  display: block;
+  z-index: 10;
+  position: relative;
+  height: 80px;
+  line-height: 80px;
+  color: #FFFFFF;
+  padding: 0 30px;
+}
+.container {
+  width: 100%;
+  padding: 0 50px;
+  overflow: hidden;
+  display: block;
+  background: #f5f5f5;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+/* footer */
+#footer {
+  background: #6f5499;
+  height: 60px;
+  /*margin: 10px 0 0 0;*/
+}
+#footer p {
+  padding-top: 20px;
+  text-align: center;
+  color: #fff;
+}
+/* 装修案例 */
+.show_container li {
+  float: left;
+  width: 377px;
+  margin: 0 15px 15px 0;
+  background: #fff;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+.show_container li:hover {
+  -webkit-box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  -webkit-transform: translate3d(0, -2px, 0);
+  transform: translate3d(0, -2px, 0);
+}
+.show_container li a {
+  color: #666;
+}
+.show_container li a:hover {
+  text-decoration: none;
+}
+.show_container li:nth-child(3n+0) {
+  margin: 0 0 15px 0;
+}
+.item_content img {
+  width: 377px;
+  height: 250px;
+}
+.item_footer {
+  height: 40px;
+  line-height: 40px;
+  padding: 0 0 0 10px;
+}

@@ -1,0 +1,156 @@
+@charset "utf-8";
+/*@yellow: rgb(225, 204, 0);*/
+body {
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+  font-family: 'Microsoft Yahei';
+}
+ul,
+dl,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+p {
+  padding: 0;
+  margin: 0;
+}
+ul,
+li {
+  list-style: none;
+}
+img {
+  border: medium none;
+  display: inline;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  color: #fff;
+}
+/* 清除浮动 */
+.clearix {
+  zoom: 1;
+}
+.clearfix:after,
+.clearfix:before {
+  content: "";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+  overflow: hidden;
+}
+.td_header {
+  background: #6f5499;
+  height: 80px;
+  padding: 0 50px;
+  /* 导航 */
+}
+.td_header img {
+  float: left;
+  width: 93px;
+  margin-top: 15px;
+}
+.td_header .nav {
+  float: left;
+  height: 80px;
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: bold;
+}
+.td_header .nav li a:hover,
+.td_header .nav li a:active {
+  border: none;
+  text-decoration: none;
+}
+.td_header .nav li {
+  float: left;
+  height: 80px;
+  line-height: 80px;
+}
+.td_header .nav li.back {
+  background: url(../images/b_slider.png) center bottom no-repeat;
+  width: 70px;
+  height: 60px;
+  z-index: 8;
+  position: absolute;
+}
+.td_header .nav li a {
+  display: block;
+  z-index: 10;
+  position: relative;
+  height: 80px;
+  line-height: 80px;
+  color: #FFFFFF;
+  padding: 0 30px;
+}
+.container {
+  width: 100%;
+  padding: 0 50px;
+  overflow: hidden;
+  display: block;
+  background: #f5f5f5;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+/* footer */
+#footer {
+  background: #6f5499;
+  height: 60px;
+}
+#footer p {
+  padding-top: 20px;
+  text-align: center;
+  color: #fff;
+}
+.td_header {
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  width: 100%;
+}
+nav.menu {
+  position: fixed;
+  right: 0;
+  top: 50%;
+  z-index: 2;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+}
+nav.menu li {
+  width: 100px;
+  font-size: 20px;
+  text-align: center;
+}
+nav.menu li a {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  color: #6f5499;
+  background: #fff;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+nav.menu li.current a {
+  width: 14px;
+  height: 14px;
+  border-radius: 8px;
+  background: #6f5499;
+  border: none;
+}
+.section {
+  background: #f5f5f5;
+}
+.section img {
+  display: block;
+  max-width: 80%;
+  margin: 0 auto;
+}

@@ -34,3 +34,6 @@ src/js/lib
 
 # 忽略文件
 *.less
+
+# 上传的图片
+src/images/show
