@@ -30,7 +30,9 @@ node_modules
 npm-debug.log
 
 # 使用bower安装的库文件
-src/js/lib
+src/js/lib/bootstrap
+src/js/lib/jquery
+src/js/lib/jquery-form
 
 # 忽略文件
 *.less
