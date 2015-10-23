@@ -50,9 +50,13 @@ a:hover {
 .td_header {
   background: #6f5499;
   height: 80px;
-  /*margin: 0 0 10px 0;*/
   padding: 0 50px;
   /* 导航 */
+}
+.td_header img {
+  float: left;
+  width: 93px;
+  margin-top: 15px;
 }
 .td_header .nav {
   float: left;
@@ -101,7 +105,6 @@ a:hover {
 #footer {
   background: #6f5499;
   height: 60px;
-  /*margin: 10px 0 0 0;*/
 }
 #footer p {
   padding-top: 20px;
