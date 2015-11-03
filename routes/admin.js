@@ -8,7 +8,7 @@ var gm = require('gm').subClass({imageMagick: true});
 var mongo = require('./mongo');
 var moment = require('moment');
 
-var baseDir = "/Users/shikun/develop/tudou/src";
+var baseDir = process.env.PWD + "/src";
 
 // mongoose model
 var mongooseModel = mongo.model('mongoose');
@@ -107,7 +107,9 @@ router.post('/add', function(req, res) {
             fs.renameSync(path, newUrl);
 
             // 压缩出一张缩略图
+	    console.log(newUrl);
             gm(newUrl).size(function(err, val) {
+		console.log(err);
                 console.log(val);
 
                 gm(newUrl)
