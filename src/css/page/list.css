@@ -112,9 +112,12 @@ a:hover {
   color: #fff;
 }
 /* 装修案例 */
+.show_container {
+  margin-top: 15px;
+}
 .show_container li {
   float: left;
-  width: 377px;
+  width: 279px;
   margin: 0 15px 15px 0;
   background: #fff;
   -webkit-transition: all 0.2s linear;
@@ -132,11 +135,11 @@ a:hover {
 .show_container li a:hover {
   text-decoration: none;
 }
-.show_container li:nth-child(3n+0) {
+.show_container li:nth-child(4n+0) {
   margin: 0 0 15px 0;
 }
 .item_content img {
-  width: 377px;
+  width: 279px;
   height: 250px;
 }
 .item_footer {

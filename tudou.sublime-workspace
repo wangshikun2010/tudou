@@ -4,6 +4,106 @@
 		"selected_items":
 		[
 			[
+				"te",
+				"text-decoration"
+			],
+			[
+				"font",
+				"font-weight"
+			],
+			[
+				"new",
+				"newu"
+			],
+			[
+				"re",
+				"req"
+			],
+			[
+				"t",
+				"translate3d"
+			],
+			[
+				"max",
+				"max-width"
+			],
+			[
+				"ima",
+				"image_s"
+			],
+			[
+				"fo",
+				"format"
+			],
+			[
+				"get",
+				"getTime"
+			],
+			[
+				"co",
+				"console"
+			],
+			[
+				"res",
+				"result"
+			],
+			[
+				"data",
+				"data-close"
+			],
+			[
+				"cl",
+				"click"
+			],
+			[
+				"m",
+				"myModal"
+			],
+			[
+				"mo",
+				"mongo"
+			],
+			[
+				"for",
+				"form"
+			],
+			[
+				"s",
+				"status"
+			],
+			[
+				"con",
+				"content"
+			],
+			[
+				"inline",
+				"inline-block"
+			],
+			[
+				"ti",
+				"title"
+			],
+			[
+				"r",
+				"result"
+			],
+			[
+				"ne",
+				"next"
+			],
+			[
+				"cn",
+				"conditions"
+			],
+			[
+				"mon",
+				"mongooseModel"
+			],
+			[
+				"ab",
+				"about"
+			],
+			[
 				"sum_",
 				"sum_price"
 			],
@@ -32,10 +132,6 @@
 				"href"
 			],
 			[
-				"re",
-				"refresh"
-			],
-			[
 				"li",
 				"liWidth"
 			],
@@ -48,20 +144,12 @@
 				"vou_id"
 			],
 			[
-				"max",
-				"max_count"
-			],
-			[
 				"menu",
 				"menu"
 			],
 			[
 				"add",
 				"addMenu"
-			],
-			[
-				"m",
-				"myScroll"
 			],
 			[
 				"refre",
@@ -72,20 +160,12 @@
 				"helpScroll"
 			],
 			[
-				"con",
-				"content"
-			],
-			[
 				"c",
 				"color"
 			],
 			[
 				"all",
 				"allMenuData"
-			],
-			[
-				"data",
-				"data-count"
 			],
 			[
 				"a",
@@ -108,10 +188,6 @@
 				"parents"
 			],
 			[
-				"font",
-				"font-size"
-			],
-			[
 				"border-top",
 				"border-top-right-radius"
 			],
@@ -124,16 +200,8 @@
 				"border-right"
 			],
 			[
-				"s",
-				"solid"
-			],
-			[
 				"la",
 				"layer"
-			],
-			[
-				"cl",
-				"close"
 			],
 			[
 				"I",
@@ -180,10 +248,6 @@
 				"prototype"
 			],
 			[
-				"te",
-				"true"
-			],
-			[
 				"in",
 				"initialize"
 			],
@@ -222,10 +286,6 @@
 			[
 				"back",
 				"background"
-			],
-			[
-				"co",
-				"core"
 			],
 			[
 				"user",
@@ -320,10 +380,6 @@
 				"menuInfo"
 			],
 			[
-				"r",
-				"return"
-			],
-			[
 				"cons",
 				"consoleLog"
 			],
@@ -342,10 +398,6 @@
 			[
 				"C",
 				"Cache"
-			],
-			[
-				"res",
-				"respnoseText"
 			],
 			[
 				"index",
@@ -392,10 +444,6 @@
 				"main-btn"
 			],
 			[
-				"get",
-				"get-sms"
-			],
-			[
 				"b",
 				"base"
 			],
@@ -432,10 +480,6 @@
 				"pageClass"
 			],
 			[
-				"for",
-				"for	for (…) {…}"
-			],
-			[
 				"class",
 				"classNames"
 			],
@@ -470,100 +514,69 @@
 			[
 				"body",
 				"bodyHeight"
-			],
-			[
-				"public",
-				"publicJs"
-			],
-			[
-				"font-",
-				"font-size"
-			],
-			[
-				"ls",
-				"list-style-type"
 			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"file": "header.php",
+			"file": "routes/admin.js",
 			"settings":
 			{
-				"buffer_size": 993,
+				"buffer_size": 7436,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "show.php",
+			"file": "routes/mongo.js",
 			"settings":
 			{
-				"buffer_size": 2395,
-				"line_ending": "Windows"
+				"buffer_size": 1546,
+				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "js/lib/jquery.slider.js",
+			"file": "app.js",
 			"settings":
 			{
-				"buffer_size": 20480,
-				"line_ending": "Windows"
+				"buffer_size": 1439,
+				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "index.php",
+			"file": "routes/index.js",
 			"settings":
 			{
-				"buffer_size": 656,
-				"line_ending": "Windows"
+				"buffer_size": 1608,
+				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "css/layout.css",
+			"file": "views/detail.ejs",
 			"settings":
 			{
-				"buffer_size": 4285,
-				"line_ending": "Windows"
+				"buffer_size": 917,
+				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "about.php",
+			"file": "views/admin/edit.ejs",
 			"settings":
 			{
-				"buffer_size": 1880,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "css/global.css",
-			"settings":
-			{
-				"buffer_size": 490,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "news.php",
-			"settings":
-			{
-				"buffer_size": 1880,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "js/page/nav.js",
-			"settings":
-			{
-				"buffer_size": 1815,
+				"buffer_size": 2360,
 				"line_ending": "Unix"
 			}
 		}
 	],
 	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
 	"command_palette":
 	{
 		"height": 47.0,
+		"last_filter": "",
 		"selected_items":
 		[
 			[
@@ -606,13 +619,118 @@
 	"expanded_folders":
 	[
 		"/Users/shikun/develop/tudou",
-		"/Users/shikun/develop/tudou/css",
-		"/Users/shikun/develop/tudou/js",
-		"/Users/shikun/develop/tudou/js/lib",
-		"/Users/shikun/develop/tudou/js/page"
+		"/Users/shikun/develop/tudou/node_modules",
+		"/Users/shikun/develop/tudou/routes",
+		"/Users/shikun/develop/tudou/src",
+		"/Users/shikun/develop/tudou/src/css",
+		"/Users/shikun/develop/tudou/src/css/common",
+		"/Users/shikun/develop/tudou/src/js",
+		"/Users/shikun/develop/tudou/src/js/lib",
+		"/Users/shikun/develop/tudou/views"
 	],
 	"file_history":
 	[
+		"/Users/shikun/develop/tudou/tudou.sublime-project",
+		"/Users/shikun/develop/tudou/.gitignore",
+		"/Users/shikun/develop/tudou/routes/index.js",
+		"/Users/shikun/develop/tudou/views/index.ejs",
+		"/Users/shikun/develop/tudou/src/js/lib/jquery.nav.js",
+		"/Users/shikun/develop/tudou/src/js/lib/jquery.slider.js",
+		"/Users/shikun/develop/tudou/bower.json",
+		"/Users/shikun/develop/tudou/.bowerrc",
+		"/Users/shikun/develop/tudou/src/js/lib/jquery.easing.1.3.js",
+		"/Users/shikun/develop/tudou/src/js/lib/jquery.fullPage.min.js",
+		"/Users/shikun/develop/tudou/src/css/global.less",
+		"/Users/shikun/develop/tudou/src/css/common/global.less",
+		"/Users/shikun/develop/tudou/app.js",
+		"/Users/shikun/develop/tudou/server.js",
+		"/Users/shikun/develop/tudou/README.md.1",
+		"/Users/shikun/develop/tudou/package.json",
+		"/Users/shikun/develop/tudou/src/css/page/about.less",
+		"/Users/shikun/develop/tudou/src/css/page/detail.less",
+		"/Users/shikun/develop/tudou/src/css/page/index.less",
+		"/Users/shikun/develop/tudou/src/css/page/list.less",
+		"/Users/shikun/develop/tudou/views/show.ejs",
+		"/Users/shikun/develop/tudou/views/news.ejs",
+		"/Users/shikun/develop/tudou/views/header.ejs",
+		"/Users/shikun/develop/tudou/views/footer.ejs",
+		"/Users/shikun/develop/tudou/views/about.ejs",
+		"/Users/shikun/develop/tudou/routes/mongo.js",
+		"/Users/shikun/develop/tudou/node_modules/gm/node_modules/array-series/index.js",
+		"/Users/shikun/develop/tudou/node_modules/.bin/uuid",
+		"/Users/shikun/develop/tudou/node_modules/body-parser/lib/read.js",
+		"/Users/shikun/develop/tudou/node_modules/body-parser/index.js",
+		"/Users/shikun/develop/tudou/src/js/page/nav.js",
+		"/Users/shikun/develop/tudou/README.md",
+		"/Users/shikun/develop/tudou/src/css/index.less",
+		"/Users/shikun/develop/tudou/src/css/detail.less",
+		"/Users/shikun/develop/tudou/src/css/list.less",
+		"/Users/shikun/develop/tudou/src/css/about.less",
+		"/Users/shikun/develop/tudou/views/admin/header.ejs",
+		"/Users/shikun/develop/tudou/views/error.ejs",
+		"/Users/shikun/develop/tudou/views/td_header.ejs",
+		"/Users/shikun/develop/tudou/views/admin/list.ejs",
+		"/Users/shikun/develop/tudou/src/css/jquery.fullPage.css",
+		"/Users/shikun/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/shikun/develop/tudou/bin/www",
+		"/Users/shikun/develop/tudou/src/js/lib/bootstrap/dist/js/bootstrap.min.js",
+		"/Users/shikun/develop/tudou/src/js/lib/bootstrap/dist/js/npm.js",
+		"/Users/shikun/develop/tudou/src/js/lib/bootstrap/js/alert.js",
+		"/Users/shikun/develop/tudou/routes/server.js",
+		"/Users/shikun/develop/tudou/routes/router.js",
+		"/Users/shikun/develop/tudou/routes/upload.js",
+		"/Users/shikun/develop/tudou/routes/requestHandlers.js",
+		"/Users/shikun/develop/tudou/node_modules/mongoose/README.md",
+		"/Users/shikun/develop/tudou/src/js/lib/jquery-form/bower.json",
+		"/Users/shikun/develop/tudou/src/js/lib/jquery-form/jquery.form.js",
+		"/Users/shikun/develop/tudou/src/js/lib/jquery-1.4.3.min.js",
+		"/Users/shikun/develop/tudou/src/js/lib/jquery.ajaxform/ajaxpost.js",
+		"/Users/shikun/develop/tudou/src/js/lib/jquery.ajaxform/bower.json",
+		"/Users/shikun/develop/tudou/src/js/lib/jquery.ajaxform/.bower.json",
+		"/Users/shikun/develop/tudou/views/admin/edit.ejs",
+		"/Users/shikun/develop/tudou/src/js/lib/bootstrap/LICENSE",
+		"/Users/shikun/develop/tudou/src/js/lib/bootstrap/README.md",
+		"/Users/shikun/develop/tudou/src/js/lib/bootstrap/package.json",
+		"/Users/shikun/develop/tudou/src/js/lib/bootstrap/package.js",
+		"/Users/shikun/develop/tudou/node_modules/serve-favicon/node_modules/etag/node_modules/crc/package.json",
+		"/Users/shikun/develop/tudou/node_modules/serve-favicon/node_modules/etag/node_modules/crc/.npmignore",
+		"/Users/shikun/develop/tudou/node_modules/serve-favicon/index.js",
+		"/Users/shikun/develop/tudou/src/css/index.css",
+		"/Users/shikun/develop/tudou/src/css/global.css",
+		"/Users/shikun/develop/tudou/routes/admin.js",
+		"/Users/shikun/develop/tudou/views/admin/input.ejs",
+		"/Users/shikun/develop/tudou/src/js/lib/bootstrap/Gruntfile.js",
+		"/Users/shikun/develop/tudou/src/css/layout.css",
+		"/Users/shikun/develop/tudou/npm-debug.log",
+		"/Users/shikun/develop/tudou/src/js/lib/bootstrap/bower.json",
+		"/Users/shikun/develop/tudou/src/js/lib/bootstrap/.bower.json",
+		"/Users/shikun/develop/tudou/src/js/lib/bootstrap/dist/css/bootstrap.css",
+		"/Users/shikun/develop/tudou/src/js/lib/bootstrap/less/forms.less",
+		"/Users/shikun/develop/tudou/src/js/lib/bootstrap/less/mixins/clearfix.less",
+		"/Users/shikun/develop/tudou/src/js/lib/bootstrap/less/mixins/alerts.less",
+		"/Users/shikun/develop/tudou/src/js/lib/bootstrap/js/tab.js",
+		"/Users/shikun/develop/tudou/src/js/lib/bootstrap/js/.jscsrc",
+		"/Users/shikun/develop/tudou/src/js/lib/bootstrap/grunt/sauce_browsers.yml",
+		"/Users/shikun/develop/tudou/src/js/lib/bootstrap/fonts/glyphicons-halflings-regular.eot",
+		"/Users/shikun/develop/tudou/src/js/lib/bootstrap/dist/css/bootstrap-theme.css",
+		"/Users/shikun/develop/tudou/src/js/lib/bootstrap/dist/css/bootstrap.css.map",
+		"/Users/shikun/develop/tudou/src/js/lib/bootstrap/dist/css/bootstrap.min.css",
+		"/Users/shikun/develop/tudou/src/js/lib/bootstrap/dist/css/bootstrap-theme.css.map",
+		"/Users/shikun/develop/tudou/src/js/lib/bootstrap/less/alerts.less",
+		"/Users/shikun/develop/tudou/src/js/lib/bootstrap/dist/css/bootstrap-theme.min.css",
+		"/Users/shikun/develop/tudou/views/amdin/input.ejs",
+		"/Users/shikun/develop/tudou/views/config.ejs",
+		"/Users/shikun/develop/tudou/views/header.php",
+		"/Users/shikun/develop/tudou/routes/npm-debug.log",
+		"/Users/shikun/develop/tudou/js/page/nav.js",
+		"/Users/shikun/develop/tudou/news.php",
+		"/Users/shikun/develop/tudou/css/global.css",
+		"/Users/shikun/develop/tudou/about.php",
+		"/Users/shikun/develop/tudou/css/layout.css",
+		"/Users/shikun/develop/tudou/index.php",
+		"/Users/shikun/develop/tudou/js/lib/jquery.slider.js",
+		"/Users/shikun/develop/tudou/show.php",
+		"/Users/shikun/develop/tudou/header.php",
 		"/Users/shikun/develop/tudou/js/jquery.slider.js",
 		"/Users/shikun/develop/tudou/js/jquery.nav.js",
 		"/Users/shikun/develop/tudou/index.html",
@@ -639,108 +757,7 @@
 		"/Volumes/www/web/uapp/html/index.php",
 		"/Volumes/www/web/uapp/html/js/common/shopStatus.js",
 		"/Volumes/www/web/uapp/html/js/base/config.js",
-		"/Volumes/www/web/ladmin/html/js/page/addlunch.js",
-		"/Volumes/www/web/ladmin/html/js/page/findlunch.js",
-		"/Volumes/www/web/ladmin/html/js/page/login.js",
-		"/Volumes/www/web/ladmin/html/js/common/config.js",
-		"/Volumes/www/web/ladmin/templates/add.html",
-		"/Volumes/www/web/ladmin/templates/lunch.html",
-		"/Volumes/www/web/ladmin/templates/menu.html",
-		"/Volumes/www/web/ladmin/templates/print.html",
-		"/Volumes/www/web/ladmin/templates/footer.php",
-		"/Volumes/www/web/ladmin/templates/login.html",
-		"/Volumes/www/web/ladmin/html/js/page/order.js",
-		"/Volumes/www/web/ladmin/html/js/base/ajax.js",
-		"/Volumes/www/web/ladmin/html/js/lib/jquery.min.js",
-		"/Volumes/www-1/web/uapp/html/index.html",
-		"/Volumes/www-1/web/uapp/html/js/page/payorder.js",
-		"/Volumes/www-1/web/uapp/html/js/page/lunchbox.js",
-		"/Volumes/www-1/web/uapp/html/js/page/hongbaolist.js",
-		"/Volumes/www-1/web/uapp/html/js/page/userAccount.js",
-		"/Volumes/www-1/web/uapp/html/js/page/hongbao.js",
-		"/Volumes/www-1/web/uapp/html/js/base/page.js",
-		"/Volumes/www-1/web/uapp/html/app.php",
-		"/Volumes/www-1/web/uapp/html/js/page/article.js",
-		"/Volumes/www-1/web/uapp/html/js/page/articlelist.js",
-		"/Volumes/www-1/web/uapp/html/js/page/comments.js",
-		"/Volumes/www-1/web/uapp/html/js/page/coupon.js",
-		"/Volumes/www-1/web/uapp/html/js/page/dishes.js",
-		"/Volumes/www-1/web/uapp/html/js/page/feedback.js",
-		"/Volumes/www-1/web/uapp/html/js/page/forgetPwd.js",
-		"/Volumes/www-1/web/uapp/html/js/page/help.js",
-		"/Volumes/www-1/web/uapp/html/js/common/address.js",
-		"/Volumes/www-1/web/uapp/html/js/common/editOrder.js",
-		"/Volumes/www-1/web/uapp/html/js/common/getShop.js",
-		"/Volumes/www-1/web/uapp/html/js/common/shopStatus.js",
-		"/Volumes/www-1/web/uapp/html/js/page/lunchAddress.js",
-		"/Volumes/www-1/web/uapp/html/js/base/data.js",
-		"/Volumes/www-1/web/uapp/html/js/base/dialog.js",
-		"/Volumes/www-1/web/uapp/html/js/base/image.js",
-		"/Volumes/www-1/web/uapp/html/js/base/load.js",
-		"/Volumes/www-1/web/uapp/html/js/base/menu.js",
-		"/Volumes/www-1/web/uapp/html/js/base/mobile.js",
-		"/Volumes/www-1/web/uapp/html/js/base/barcodescanner.js",
-		"/Volumes/www-1/web/uapp/html/js/base/cache.js",
-		"/Volumes/www-1/web/uapp/html/js/base/cacheUpdate.js",
-		"/Volumes/www-1/web/uapp/html/js/base/click.js",
-		"/Volumes/www-1/web/uapp/html/js/base/config.js",
-		"/Volumes/www-1/web/uapp/html/js/base/core.js",
-		"/Volumes/www-1/web/uapp/html/js/base/pattern.js",
-		"/Volumes/www-1/web/uapp/html/js/base/scrollbar.js",
-		"/Volumes/www-1/web/uapp/html/js/base/util.js",
-		"/Volumes/www-1/web/uapp/html/js/page/mealselect.js",
-		"/Volumes/www-1/web/uapp/html/js/base/message.js",
-		"/Volumes/www-1/web/ladmin/html/css/lunch.css",
-		"/Volumes/www-1/web/ladmin/html/js/page/addlunch.js",
-		"/Users/shikun/develop/mobile-upload-image/README.md",
-		"/Users/shikun/develop/mobile-upload-image/release2.js",
-		"/Volumes/www/web/ladmin/html/js/base/dialog.js",
-		"/Volumes/www/web/ladmin/html/css/lunch.css",
-		"/Volumes/www/web/ladmin/html/js/common/exit.js",
-		"/Volumes/www/web/ladmin/html/js/common/restart.js",
-		"/Volumes/www/web/ladmin/html/js/common/shutdown.js",
-		"/Volumes/www/web/uapp/html/vendor/select.js",
-		"/Volumes/www/web/uapp/html/vendor/iscroll/src/iscroll-lite.js",
-		"/Volumes/www/web/uapp/html/vendor/iscroll/src/ender.js",
-		"/Volumes/www/web/uapp/html/css/page/user.css",
-		"/Volumes/www/web/uapp/html/js/page/help.js",
-		"/Volumes/www-2/web/uapp/html/js/common/getShop.js",
-		"/Volumes/www-2/web/uapp/html/index.html",
-		"/Volumes/www-2/web/uapp/html/js/page/payorder.js",
-		"/Volumes/www-2/web/uapp/html/js/page/lunchbox.js",
-		"/Volumes/www-2/web/uapp/html/js/common/editOrder.js",
-		"/Volumes/www-2/web/uapp/html/js/page/order.js",
-		"/Volumes/www-2/web/uapp/html/js/common/address.js",
-		"/Volumes/www-2/web/uapp/html/js/page/orderlist.js",
-		"/Volumes/www-2/web/uapp/html/css/base/list.css",
-		"/Volumes/www-2/web/uapp/html/js/common/shopStatus.js",
-		"/Volumes/www-2/web/uapp/html/js/page/article.js",
-		"/Volumes/www-2/web/uapp/html/js/page/lunchAddress.js",
-		"/Volumes/www-2/web/uapp/html/js/page/dishes.js",
-		"/Volumes/www-2/web/uapp/html/js/page/modifyAddress.js",
-		"/Volumes/www-2/web/uapp/html/js/page/mealselect.js",
-		"/Volumes/www/web/ladmin/html/js/base/date.js",
-		"/Volumes/www/web/ladmin/html/js/common/checkDate.js",
-		"/Volumes/www/web/ladmin/templates/nav.php",
-		"/Volumes/www-3/web/uapp/html/js/page/location.js",
-		"/Volumes/www-3/web/uapp/html/index.html",
-		"/Users/shikun/develop/leshipai/leshisong_kaifa/web/ladmin/templates/login.html",
-		"/Users/shikun/develop/leshipai/leshisong_kaifa/web/ladmin/html/js/common/modifyPswd.js",
-		"/Users/shikun/develop/leshipai/leshisong_kaifa/web/ladmin/html/js/common/restart.js",
-		"/Users/shikun/develop/leshipai/leshisong_kaifa/web/ladmin/html/js/page/login.js",
-		"/Users/shikun/develop/leshipai/leshisong_kaifa/web/ladmin/html/js/common/shutdown.js",
-		"/Users/shikun/develop/leshipai/leshisong_kaifa/web/ladmin/html/js/common/exit.js",
-		"/Users/shikun/develop/leshipai/leshisong_kaifa/web/ladmin/html/js/page/findlunch.js",
-		"/Users/shikun/develop/leshipai/leshisong_kaifa/web/ladmin/controllers/MenuNumController.php",
-		"/Users/shikun/develop/leshipai/leshisong_kaifa/web/ladmin/controllers/IndexController.php",
-		"/Users/shikun/develop/leshipai/leshisong_kaifa/web/ladmin/controllers/BaseController.php",
-		"/Users/shikun/develop/leshipai/lunch/login.html",
-		"/Users/shikun/develop/leshipai/lunch/js/page/login.js",
-		"/Users/shikun/develop/leshipai/lunch/css/login.css",
-		"/Users/shikun/develop/leshipai/lunch/js/base/ajax.js",
-		"/Users/shikun/develop/leshipai/lunch/index.html",
-		"/Users/shikun/develop/leshipai/lunch/js/common/config.js",
-		"/Users/shikun/develop/leshipai/lunch/js/base/message.js"
+		"/Volumes/www/web/ladmin/html/js/page/addlunch.js"
 	],
 	"find":
 	{
@@ -751,6 +768,8 @@
 		"height": 93.0,
 		"where_history":
 		[
+			"/Users/shikun/develop/tudou/src/js/lib/bootstrap/",
+			"/Users/shikun/develop/tudou/src/js/lib/bootstrap/less",
 			"",
 			"../../../",
 			"html",
@@ -762,6 +781,47 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"关于我们",
+			"none",
+			"第一屏",
+			"<<",
+			"span",
+			"更新",
+			">\n",
+			"});\n",
+			"();\n",
+			"myDb",
+			"mydb.m",
+			"mydb.db",
+			"}\n",
+			"images",
+			"upload",
+			"querystring",
+			"queryString",
+			"\"D:\\\\min\\\\nodejsExample2\\\\tmp\\\\test.png\"",
+			"更新",
+			"width: 200px;\n        height: 300px;",
+			"50px",
+			"rgb(225, 204, 0)",
+			"?php",
+			"RegExp.quote",
+			"exec",
+			"<th>",
+			"',\n",
+			"admin",
+			"watch",
+			"well",
+			"search-query",
+			"input-medium",
+			"require",
+			"?php",
+			"实例方法",
+			"findbyusername",
+			"'',\n",
+			".php",
+			"require",
+			"?php",
+			"users",
 			"rgb(255, 244, 32)",
 			"rgb(243, 243, 74)",
 			"&nbsp;&nbsp;文章1",
@@ -848,48 +908,7 @@
 			"START_EV",
 			"_start",
 			"onScrollEnd",
-			"scrollEnd",
-			"that.scrollTo(",
-			"scrollTo",
-			"stop",
-			"_pos",
-			"_startAni",
-			"systemli",
-			"lastShop",
-			"uuid",
-			"UUID",
-			"uuid",
-			"UUID",
-			"uuid",
-			"orderId",
-			"new Address",
-			"takeoutBusy",
-			"bookingBusy",
-			"nobusy",
-			"count",
-			"step",
-			"Step",
-			"step",
-			"updateTimeout",
-			"initialize",
-			"add-takeout-btn",
-			"canjuCount",
-			"getTakeoutShop",
-			"GetShop.getShop",
-			"$(this).find('span[data-type=\"count\"]')",
-			"ndMenuCount",
-			"editDishes",
-			"clearMenu",
-			"clearMenu[type]",
-			"js/",
-			"css/",
-			"name=\"Submit\"",
-			"name=\"textfield\"",
-			"prevPage",
-			"displayMsg",
-			"start",
-			"right",
-			"webkit"
+			"scrollEnd"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -908,207 +927,58 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 3,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "header.php",
+					"file": "routes/admin.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 993,
+						"buffer_size": 7436,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								742,
-								742
+								2517,
+								2517
 							]
 						],
 						"settings":
 						{
 							"is_xml": false,
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "show.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2395,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1596,
-								1596
-							]
-						],
-						"settings":
-						{
-							"is_xml": false,
-							"syntax": "Packages/PHP/PHP.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 436.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 6,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "js/lib/jquery.slider.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 20480,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1939,
-								1939
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 1703.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 8,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "index.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 656,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								418,
-								418
-							]
-						],
-						"settings":
-						{
-							"is_xml": false,
-							"syntax": "Packages/PHP/PHP.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 7,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "css/layout.css",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 4285,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								484,
-								484
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/CSS/CSS.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 154.0,
+						"translation.y": 1589.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
 					"type": "text"
 				},
 				{
-					"buffer": 5,
-					"file": "about.php",
+					"buffer": 1,
+					"file": "routes/mongo.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1880,
+						"buffer_size": 1546,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								258,
-								258
+								322,
+								322
 							]
 						],
 						"settings":
 						{
-							"is_xml": false,
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "css/global.css",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 490,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								215,
-								215
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
 							"tab_size": 4,
 							"translate_tabs_to_spaces": true
 						},
@@ -1120,50 +990,20 @@
 					"type": "text"
 				},
 				{
-					"buffer": 7,
-					"file": "news.php",
+					"buffer": 2,
+					"file": "app.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1880,
+						"buffer_size": 1439,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								115,
-								115
-							]
-						],
-						"settings":
-						{
-							"is_xml": false,
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
-					"type": "text"
-				},
-				{
-					"buffer": 8,
-					"file": "js/page/nav.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1815,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								860,
-								860
+								627,
+								627
 							]
 						],
 						"settings":
@@ -1173,10 +1013,101 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 82.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "routes/index.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1608,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								385,
+								385
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "views/detail.ejs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 917,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								662,
+								662
+							]
+						],
+						"settings":
+						{
+							"is_xml": false,
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "views/admin/edit.ejs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2360,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1236,
+								1236
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 15.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
 					"type": "text"
 				}
 			]
@@ -1217,6 +1148,7 @@
 	{
 		"height": 0.0
 	},
+	"pinned_build_system": "",
 	"project": "tudou.sublime-project",
 	"replace":
 	{
@@ -1226,6 +1158,7 @@
 	"select_file":
 	{
 		"height": 0.0,
+		"last_filter": "",
 		"selected_items":
 		[
 			[
@@ -1318,6 +1251,7 @@
 	"select_project":
 	{
 		"height": 500.0,
+		"last_filter": "",
 		"selected_items":
 		[
 		],
@@ -1326,6 +1260,7 @@
 	"select_symbol":
 	{
 		"height": 0.0,
+		"last_filter": "",
 		"selected_items":
 		[
 		],

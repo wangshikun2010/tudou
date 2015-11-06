@@ -23,8 +23,6 @@ app.use(bodyParser.urlencoded({
     extended: false
 }));
 app.use(cookieParser());
-console.log(__dirname);
-console.log(path.join(__dirname, 'src'));
 app.use(express.static(path.join(__dirname, 'src')));
 
 app.use('/', routes);

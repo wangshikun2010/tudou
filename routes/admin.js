@@ -80,6 +80,77 @@ router.get(/edit.*$/, function(req, res) {
     }
 });
 
+/**
+ * 压缩图片
+ * @param  {string} oldurl 旧地址
+ * @param  {string} newurl 新地址
+ * @return {}
+ */
+function resizeImage(oldurl, newurl) {
+    var maxWidth = 1200,
+        maxHeight = 1000,
+        fixedWidth = 300,
+        fixedHeight = 250;
+
+    gm(oldurl).size(function(err, val) {
+
+        console.log(val);
+
+        var x = 0, y = 0, w = 0, h = 0, r = 0;
+
+        if (val.width >= val.height) {
+            console.log('w > h');
+            if (val.width >= maxWidth) {
+                console.log('w > maxWidth');
+                x = (val.width - maxWidth) / 2;
+
+                if (val.height > maxHeight) {
+                    console.log('h > maxHeight');
+                    y = (val.height - maxHeight) / 2;
+                }
+            } else {
+                console.log('w < maxWidth');
+                if (val.height > maxHeight) {
+                    console.log('h > maxHeight');
+                    y = (val.height - maxHeight) / 2;
+                }
+            }
+        } else {
+            if (val.height >= maxHeight) {
+                console.log('h > maxHeight');
+                y = (val.height - maxHeight) / 2;
+
+                if (val.width > maxWidth) {
+                    console.log('w > maxWidth');
+                    x = (val.width - maxWidth) / 2;
+                }
+            } else {
+                console.log('h < maxHeight');
+                if (val.width > maxWidth) {
+                    console.log('w > maxWidth');
+                    x = (val.width - maxWidth) / 2;
+                }
+
+                // maxWidth = val.width;
+                // maxHeight = maxHeight;
+            }
+        }
+
+        console.log(maxWidth, maxHeight, x, y);
+
+        gm(oldurl)
+        .quality(80)
+        .crop(maxWidth, maxHeight, x, y)
+        .resize(fixedWidth, fixedHeight)
+        .autoOrient()
+        .write(newurl, function (err) {
+            if (!err) {
+                console.log('image resize complate2');
+            }
+        });
+    });
+}
+
 // 新增数据
 router.post('/add', function(req, res) {
     console.log('request add interface');
@@ -91,42 +162,45 @@ router.post('/add', function(req, res) {
         var path = files.image.path;
 
         // 判断图片大小
-        if (files.image.size > 1.5 * 1024 * 1024) {
+        if (files.image.size > 1 * 1024 * 1024) {
             // 删除用户上传的图片
             fs.unlink(path, function() {
                 res.json({
                     status: 201,
-                    description: '图片太大，不能超过1.5M',
+                    description: '图片太大，不能超过1M',
                     data: {}
                 });
             });
         } else {
-            var newUrl = path + files.image.name.substring(files.image.name.lastIndexOf('.')),
-                small = path + '_small' + files.image.name.substring(files.image.name.lastIndexOf('.'));
+            var suffix = files.image.name.substring(files.image.name.lastIndexOf('.')),
+                newUrl = path + suffix,
+                small = path + '_small' + suffix;
 
+            console.log(suffix);
+
+            // 给图片重命名
             fs.renameSync(path, newUrl);
 
-            // 压缩出一张缩略图
-	    console.log(newUrl);
-            gm(newUrl).size(function(err, val) {
-		console.log(err);
-                console.log(val);
-
+            if (suffix.toUpperCase() != '.PNG') {
                 gm(newUrl)
                 .quality(30)
-                .resize(parseInt(val.width / 3), parseInt(val.height / 3))
-                .autoOrient()
-                .write(small, function (err) {
-                    if (!err) console.log('image resize complate');
+                .write(newUrl, function (err) {
+                    if (!err) {
+                        console.log('image min complate');
+                    }
+
+                    resizeImage(newUrl, small);
                 });
-            });
+            } else {
+                resizeImage(newUrl, small);
+            }
 
             var doc = {
                 title: fields.title,
                 content: fields.content,
                 time: new Date().getTime(),
-                image: path.replace(baseDir, "") + files.image.name.substring(files.image.name.lastIndexOf('.')),
-                image_s: path.replace(baseDir, "") + '_small' + files.image.name.substring(files.image.name.lastIndexOf('.'))
+                image: path.replace(baseDir, "") + suffix,
+                image_s: path.replace(baseDir, "") + '_small' + suffix
             };
 
             mongooseModel.create(doc, function(error) {
@@ -232,8 +306,16 @@ router.get('/delete', function(req, res) {
     mongooseModel.find(conditions, function(error, result) {
 
         // 同时删除上传的图片
-        fs.unlinkSync(baseDir + result[0].image);
-        fs.unlinkSync(baseDir + result[0].image_s);
+        fs.exists(baseDir + result[0].image, function(exists) {
+            if (exists) {
+                fs.unlinkSync(baseDir + result[0].image);
+            }
+        });
+        fs.exists(baseDir + result[0].image_s, function(exists) {
+            if (exists) {
+                fs.unlinkSync(baseDir + result[0].image_s);
+            }
+        });
 
         // 删除此条数据
         mongooseModel.remove(conditions, function(error) {
