@@ -16,7 +16,7 @@
         <div class="form-group">
             <label for="inputPassword3" class="col-sm-1 control-label">图片</label>
             <div class="col-sm-11">
-                <input type="file" name="image">
+                <input type="file" name="image" accept="image/jpeg,image/png">
                 <div class="row">
                     <div class="col-xs-6 col-md-3">
                         <a href="#" class="thumbnail">
@@ -47,11 +47,6 @@
                 // console.log(arr);
                 // console.log($form);
                 // console.log(options);
-
-                // if ($form.find('input:file').val() == '') {
-                //     alert('请上传图片');
-                //     return false;
-                // }
             },
             success: function(res, status) {
                 console.log(res);

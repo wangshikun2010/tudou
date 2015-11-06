@@ -87,52 +87,42 @@ router.get(/edit.*$/, function(req, res) {
  * @return {}
  */
 function resizeImage(oldurl, newurl) {
-    var maxWidth = 1200,
+    var maxWidth = 1120,
         maxHeight = 1000,
-        fixedWidth = 300,
-        fixedHeight = 250;
+        fixedWidth = 280,
+        fixedHeight = 250,
+        scale = maxWidth / maxHeight;
 
     gm(oldurl).size(function(err, val) {
-
         console.log(val);
 
-        var x = 0, y = 0, w = 0, h = 0, r = 0;
+        var x = 0, y = 0;
 
+        // 横向图片
         if (val.width >= val.height) {
-            console.log('w > h');
             if (val.width >= maxWidth) {
-                console.log('w > maxWidth');
                 x = (val.width - maxWidth) / 2;
-
-                if (val.height > maxHeight) {
-                    console.log('h > maxHeight');
-                    y = (val.height - maxHeight) / 2;
-                }
-            } else {
-                console.log('w < maxWidth');
-                if (val.height > maxHeight) {
-                    console.log('h > maxHeight');
-                    y = (val.height - maxHeight) / 2;
-                }
             }
+
+            if (val.height > maxHeight) {
+                y = (val.height - maxHeight) / 2;
+            } else {
+                maxHeight = val.height;
+                maxWidth = parseInt(maxHeight * scale);
+                x = (val.width - maxWidth) / 2;
+            }
+        // 竖向图片
         } else {
             if (val.height >= maxHeight) {
-                console.log('h > maxHeight');
                 y = (val.height - maxHeight) / 2;
+            }
 
-                if (val.width > maxWidth) {
-                    console.log('w > maxWidth');
-                    x = (val.width - maxWidth) / 2;
-                }
+            if (val.width > maxWidth) {
+                x = (val.width - maxWidth) / 2;
             } else {
-                console.log('h < maxHeight');
-                if (val.width > maxWidth) {
-                    console.log('w > maxWidth');
-                    x = (val.width - maxWidth) / 2;
-                }
-
-                // maxWidth = val.width;
-                // maxHeight = maxHeight;
+                maxWidth = val.width;
+                maxHeight = parseInt(maxWidth / scale);
+                y = (val.height - maxHeight) / 2;
             }
         }
 
@@ -145,7 +135,7 @@ function resizeImage(oldurl, newurl) {
         .autoOrient()
         .write(newurl, function (err) {
             if (!err) {
-                console.log('image resize complate2');
+                console.log('image resize complate');
             }
         });
     });
@@ -229,35 +219,98 @@ router.post('/update', function(req, res) {
     form.uploadDir = baseDir + "/images/show/";
     form.parse(req, function(error, fields, files) {
 
-        var path = files.image.path;
+        if (files.image) {
+            var path = files.image.path;
 
-        // 判断图片大小
-        if (files.image.size > 1.5 * 1024 * 1024) {
-            fs.unlink(path, function() {    //fs.unlink 删除用户上传的文件
-                res.json({
-                    status: 201,
-                    description: '图片太大，不能超过1.5M',
-                    data: {}
+            // 判断图片大小
+            if (files.image.size > 1 * 1024 * 1024) {
+                fs.unlink(path, function() {    //fs.unlink 删除用户上传的文件
+                    res.json({
+                        status: 201,
+                        description: '图片太大，不能超过1M',
+                        data: {}
+                    });
                 });
-            });
+            } else {
+
+                var suffix = files.image.name.substring(files.image.name.lastIndexOf('.')),
+                    newUrl = path + suffix,
+                    small = path + '_small' + suffix;
+
+                console.log(suffix);
+
+                // 给图片重命名
+                fs.renameSync(path, newUrl);
+
+                if (suffix.toUpperCase() != '.PNG') {
+                    gm(newUrl)
+                    .quality(30)
+                    .write(newUrl, function (err) {
+                        if (!err) {
+                            console.log('image min complate');
+                        }
+
+                        resizeImage(newUrl, small);
+                    });
+                } else {
+                    resizeImage(newUrl, small);
+                }
+
+                var conditions = {
+                    _id: fields.id
+                };
+
+                // 查询之前词条数据上传的图片
+                var oldImage, oldImage_s;
+                mongooseModel.find(conditions, function(error, result) {
+                    oldImage = baseDir + result[0].image;
+                    oldImage_s = baseDir + result[0].image_s;
+                });
+
+                var update = {
+                    $set: {
+                        title: fields.title,
+                        content: fields.content,
+                        time: new Date().getTime(),
+                        image: path.replace(baseDir, "") + suffix,
+                        image_s: path.replace(baseDir, "") + '_small' + suffix
+                    }
+                };
+
+                var options = {
+                    upsert: true
+                };
+
+                mongooseModel.update(conditions, update, options, function(error) {
+                    if (error) {
+                        console.log(error);
+                        res.json({
+                            status: 201,
+                            description: '更新失败',
+                            data: {}
+                        });
+                    } else {
+                        // 删除之前上传的图片
+                        fs.exists(oldImage, function(exists) {
+                            if (exists) {
+                                fs.unlinkSync(oldImage);
+                            }
+                        });
+                        fs.exists(oldImage_s, function(exists) {
+                            if (exists) {
+                                fs.unlinkSync(oldImage_s);
+                            }
+                        });
+
+                        res.json({
+                            status: 200,
+                            description: '更新成功',
+                            data: {}
+                        });
+                    }
+                });
+            }
         } else {
-            var newUrl = path + files.image.name.substring(files.image.name.lastIndexOf('.')),
-                small = path + '_small' + files.image.name.substring(files.image.name.lastIndexOf('.'));
-
-            fs.renameSync(path, newUrl);
-
-            gm(newUrl).size(function(err, val) {
-                console.log(val);
-
-                gm(newUrl)
-                .quality(30)
-                .resize(parseInt(val.width / 3), parseInt(val.height / 3))
-                .autoOrient()
-                .write(small, function (err) {
-                    if (!err) console.log('image resize complate');
-                });
-            });
-
             var conditions = {
                 _id: fields.id
             };
@@ -266,9 +319,7 @@ router.post('/update', function(req, res) {
                 $set: {
                     title: fields.title,
                     content: fields.content,
-                    time: new Date().getTime(),
-                    image: path.replace(baseDir, "") + files.image.name.substring(files.image.name.lastIndexOf('.')),
-                    image_s: path.replace(baseDir, "") + '_small' + files.image.name.substring(files.image.name.lastIndexOf('.'))
+                    time: new Date().getTime()
                 }
             };
 
@@ -293,6 +344,7 @@ router.post('/update', function(req, res) {
                 }
             });
         }
+
     });
 });
 
