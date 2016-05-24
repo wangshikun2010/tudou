@@ -11,13 +11,34 @@ var moment = require('moment');
 var baseDir = process.env.PWD + "/src";
 
 // mongoose model
-var mongooseModel = mongo.model('mongoose');
+var tudouModel = mongo.model('tudou_images');
+
+var sequenceId = 0;
+
+function getNextSequenceValue(callback) {
+    var countersModel = mongo.model('counters');
+    countersModel.update({_id: "product_id"}, {
+        $inc:{sequence_value:1}
+    }, {upsert: false}, function(error) {
+        console.log('update success');
+
+        countersModel.find({ _id: 'product_id' }, function(error, result) {
+            console.log(result);
+            console.log('new value: ' + result[0].sequence_value);
+            sequenceId = result[0].sequence_value;
+            callback();
+        });
+    });
+}
 
 // 请求首页
 router.get('/', function(req, res, next) {
     res.render('admin/input', {
-        title: '录入页'
+        title: '列表页'
     });
+    next();
+}, function(req, res) {
+    console.log('请求录入页完成');
 });
 
 // 新增页
@@ -29,7 +50,7 @@ router.get('/add', function(req, res, next) {
 
 // 列表
 router.get('/list', function(req, res) {
-    mongooseModel.find(function(error, result) {
+    tudouModel.find(function(error, result) {
         if (error) {
             console.log(error);
         } else {
@@ -56,7 +77,7 @@ router.get(/edit.*$/, function(req, res) {
     console.log(req.query.id);
 
     if (req.query.id) {
-        mongooseModel.find({ _id: req.query.id }, function(error, result) {
+        tudouModel.find({ _id: req.query.id }, function(error, result) {
             if (error) {
                 console.log(error);
             } else {
@@ -94,7 +115,7 @@ function resizeImage(oldurl, newurl) {
         scale = maxWidth / maxHeight;
 
     gm(oldurl).size(function(err, val) {
-        console.log(val);
+        // console.log(val);
 
         var x = 0, y = 0;
 
@@ -126,8 +147,9 @@ function resizeImage(oldurl, newurl) {
             }
         }
 
-        console.log(maxWidth, maxHeight, x, y);
+        // console.log(maxWidth, maxHeight, x, y);
 
+        // 调节图片质量，剪切并缩放图片
         gm(oldurl)
         .quality(80)
         .crop(maxWidth, maxHeight, x, y)
@@ -135,7 +157,7 @@ function resizeImage(oldurl, newurl) {
         .autoOrient()
         .write(newurl, function (err) {
             if (!err) {
-                console.log('image resize complate');
+                console.log('image crop and resize complate');
             }
         });
     });
@@ -185,29 +207,35 @@ router.post('/add', function(req, res) {
                 resizeImage(newUrl, small);
             }
 
-            var doc = {
-                title: fields.title,
-                content: fields.content,
-                time: new Date().getTime(),
-                image: path.replace(baseDir, "") + suffix,
-                image_s: path.replace(baseDir, "") + '_small' + suffix
-            };
+            // 获取下一个序列值并存入数据库
+            getNextSequenceValue(function() {
+                console.log('new id' + sequenceId);
 
-            mongooseModel.create(doc, function(error) {
-                if (error) {
-                    console.log(error);
-                    res.json({
-                        status: 201,
-                        description: '新增失败',
-                        data: {}
-                    });
-                } else {
-                    res.json({
-                        status: 200,
-                        description: '新增成功',
-                        data: {}
-                    });
-                }
+                var doc = {
+                    _id: sequenceId,
+                    title: fields.title,
+                    content: fields.content,
+                    time: new Date().getTime(),
+                    image: path.replace(baseDir, "") + suffix,
+                    image_s: path.replace(baseDir, "") + '_small' + suffix
+                };
+
+                tudouModel.create(doc, function(error) {
+                    if (error) {
+                        console.log(error);
+                        res.json({
+                            status: 201,
+                            description: '新增失败',
+                            data: {}
+                        });
+                    } else {
+                        res.json({
+                            status: 200,
+                            description: '新增成功',
+                            data: {}
+                        });
+                    }
+                });
             });
         }
     });
@@ -262,7 +290,7 @@ router.post('/update', function(req, res) {
 
                 // 查询之前词条数据上传的图片
                 var oldImage, oldImage_s;
-                mongooseModel.find(conditions, function(error, result) {
+                tudouModel.find(conditions, function(error, result) {
                     oldImage = baseDir + result[0].image;
                     oldImage_s = baseDir + result[0].image_s;
                 });
@@ -281,7 +309,7 @@ router.post('/update', function(req, res) {
                     upsert: true
                 };
 
-                mongooseModel.update(conditions, update, options, function(error) {
+                tudouModel.update(conditions, update, options, function(error) {
                     if (error) {
                         console.log(error);
                         res.json({
@@ -327,7 +355,7 @@ router.post('/update', function(req, res) {
                 upsert: true
             };
 
-            mongooseModel.update(conditions, update, options, function(error) {
+            tudouModel.update(conditions, update, options, function(error) {
                 if (error) {
                     console.log(error);
                     res.json({
@@ -355,7 +383,7 @@ router.get('/delete', function(req, res) {
         _id: req.query.id
     };
 
-    mongooseModel.find(conditions, function(error, result) {
+    tudouModel.find(conditions, function(error, result) {
 
         // 同时删除上传的图片
         fs.exists(baseDir + result[0].image, function(exists) {
@@ -370,7 +398,7 @@ router.get('/delete', function(req, res) {
         });
 
         // 删除此条数据
-        mongooseModel.remove(conditions, function(error) {
+        tudouModel.remove(conditions, function(error) {
             if (error) {
                 res.json({
                     status: 201,

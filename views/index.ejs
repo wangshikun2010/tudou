@@ -4,10 +4,15 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,minimal-ui" />
     <title>土豆装修设计室</title>
+    <meta name="keywords" content="土豆装修设计室,装修设计,土豆"/>
+    <meta name="description" content="土豆装修设计室,装修设计,土豆"/>
     <link rel="stylesheet" type="text/css" href="css/lib/jquery.fullPage.css" />
+    <!-- build:css css/page/index.css -->
     <link rel="stylesheet" type="text/css" href="css/page/index.css" />
+    <!-- endbuild -->
     <script type="text/javascript" src="js/lib/jquery/dist/jquery.min.js"></script>
     <script type="text/javascript" src="js/lib/jquery.fullPage.min.js"></script>
+    <% include common/baidu_hm %>
 </head>
 <body>
     <% include td_header %>
@@ -54,11 +59,9 @@
                 },
                 // 滚动完的回调函数
                 afterLoad: function(anchorLink, index) {
-                    // console.log(anchorLink, index);
                 },
                 // 滚动前的回调函数
                 onLeave: function(index, nextIndex, direction) {
-                    // console.log(index, nextIndex, direction);
                     $('a[href="#page'+index+'"]').parent('li').removeClass('current');
                     $('a[href="#page'+nextIndex+'"]').parent('li').addClass('current');
 

@@ -25,13 +25,14 @@ app.use(bodyParser.urlencoded({
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'src')));
 
+// 路由中间件
 app.use('/', routes);
 app.use('/admin', admin);
 
 // error handlers
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
-    var err = new Error('Not Found');
+    var err = new Error('Not Found(未找到该路径处理路由)');
     err.status = 404;
     next(err);
 });
