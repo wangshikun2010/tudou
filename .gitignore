@@ -1,5 +1,3 @@
-# Logs
-logs
 *.log
 
 # Runtime data
@@ -38,4 +36,11 @@ src/js/lib/jquery-form
 *.less
 
 # 上传的图片
+src/images/show
+
+# map文件
+*.map
+
+build
+
 src/images/show

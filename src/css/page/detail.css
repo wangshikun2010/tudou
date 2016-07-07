@@ -1,5 +1,4 @@
 @charset "utf-8";
-/*@yellow: rgb(225, 204, 0);*/
 body {
   padding: 0;
   margin: 0;
@@ -48,7 +47,7 @@ a:hover {
   overflow: hidden;
 }
 .td_header {
-  background: #6f5499;
+  background: #e1cc00;
   height: 80px;
   padding: 0 50px;
   /* 导航 */
@@ -103,7 +102,7 @@ a:hover {
 }
 /* footer */
 #footer {
-  background: #6f5499;
+  background: #e1cc00;
   height: 60px;
 }
 #footer p {
@@ -123,3 +122,5 @@ section h1 {
   font-size: 16px;
   color: #666;
 }
+
+/*# sourceMappingURL=detail.css.map */
